@@ -1,2 +1,0 @@
-load dj
-normplot(x)

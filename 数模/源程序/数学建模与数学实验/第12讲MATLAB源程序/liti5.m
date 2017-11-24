@@ -1,1 +1,0 @@
-[m,v]=normstat(3,5)
