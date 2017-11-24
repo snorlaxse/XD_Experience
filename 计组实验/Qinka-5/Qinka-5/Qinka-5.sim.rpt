@@ -1,0 +1,249 @@
+Simulator report for Qinka-5
+Fri Nov 19 09:27:00 2010
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 20.0 us      ;
+; Simulation Netlist Size     ; 81 nodes     ;
+; Simulation Coverage         ;      75.00 % ;
+; Total Number of Transitions ; 813          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.00 % ;
+; Total nodes checked                                 ; 81           ;
+; Total output ports checked                          ; 88           ;
+; Total output ports with complete 1/0-value coverage ; 66           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 11           ;
+; Total output ports with no 0-value coverage         ; 12           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                 ; Output Port Name                                                                                             ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[4] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[4]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[3] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[3]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[2] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[2]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[1] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[1]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[0] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[0]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita0   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita0      ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita0   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita1   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita1      ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita1   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita2   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita2      ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita2   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita3   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita3      ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita3   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita4   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita4      ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita4   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita5   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita5      ; combout          ;
+; |Qinka-5|74273b:inst3|12                                                                                  ; |Qinka-5|74273b:inst3|12                                                                                     ; regout           ;
+; |Qinka-5|74273b:inst3|14                                                                                  ; |Qinka-5|74273b:inst3|14                                                                                     ; regout           ;
+; |Qinka-5|74273b:inst3|15                                                                                  ; |Qinka-5|74273b:inst3|15                                                                                     ; regout           ;
+; |Qinka-5|74273b:inst3|16                                                                                  ; |Qinka-5|74273b:inst3|16                                                                                     ; regout           ;
+; |Qinka-5|74273b:inst3|17                                                                                  ; |Qinka-5|74273b:inst3|17                                                                                     ; regout           ;
+; |Qinka-5|74273b:inst3|18                                                                                  ; |Qinka-5|74273b:inst3|18                                                                                     ; regout           ;
+; |Qinka-5|74273b:inst3|19                                                                                  ; |Qinka-5|74273b:inst3|19                                                                                     ; regout           ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[6]~909                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[6]~909                               ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|aclr_actual~2        ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|aclr_actual~2           ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[7]~910                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[7]~910                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[7]~911                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[7]~911                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[5]~914                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[5]~914                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[5]~915                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[5]~915                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[4]~916                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[4]~916                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[4]~917                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[4]~917                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[3]~918                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[3]~918                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[3]~919                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[3]~919                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[2]~920                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[2]~920                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[2]~921                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[2]~921                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[1]~922                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[1]~922                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[1]~923                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[1]~923                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[0]~924                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[0]~924                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[0]~925                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[0]~925                               ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[7]~120  ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[7]~120     ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[5]~122  ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[5]~122     ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[3]~124  ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[3]~124     ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[2]~125  ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[2]~125     ; combout          ;
+; |Qinka-5|LED[6]                                                                                           ; |Qinka-5|LED[6]                                                                                              ; padio            ;
+; |Qinka-5|LED[4]                                                                                           ; |Qinka-5|LED[4]                                                                                              ; padio            ;
+; |Qinka-5|LED[3]                                                                                           ; |Qinka-5|LED[3]                                                                                              ; padio            ;
+; |Qinka-5|LED[2]                                                                                           ; |Qinka-5|LED[2]                                                                                              ; padio            ;
+; |Qinka-5|LED[1]                                                                                           ; |Qinka-5|LED[1]                                                                                              ; padio            ;
+; |Qinka-5|Q[8]                                                                                             ; |Qinka-5|Q[8]                                                                                                ; padio            ;
+; |Qinka-5|Q[6]                                                                                             ; |Qinka-5|Q[6]                                                                                                ; padio            ;
+; |Qinka-5|Q[5]                                                                                             ; |Qinka-5|Q[5]                                                                                                ; padio            ;
+; |Qinka-5|Q[4]                                                                                             ; |Qinka-5|Q[4]                                                                                                ; padio            ;
+; |Qinka-5|Q[3]                                                                                             ; |Qinka-5|Q[3]                                                                                                ; padio            ;
+; |Qinka-5|Q[2]                                                                                             ; |Qinka-5|Q[2]                                                                                                ; padio            ;
+; |Qinka-5|Q[1]                                                                                             ; |Qinka-5|Q[1]                                                                                                ; padio            ;
+; |Qinka-5|B[6]                                                                                             ; |Qinka-5|B[6]~corein                                                                                         ; combout          ;
+; |Qinka-5|B[4]                                                                                             ; |Qinka-5|B[4]~corein                                                                                         ; combout          ;
+; |Qinka-5|B[3]                                                                                             ; |Qinka-5|B[3]~corein                                                                                         ; combout          ;
+; |Qinka-5|B[2]                                                                                             ; |Qinka-5|B[2]~corein                                                                                         ; combout          ;
+; |Qinka-5|B[1]                                                                                             ; |Qinka-5|B[1]~corein                                                                                         ; combout          ;
+; |Qinka-5|LDPC                                                                                             ; |Qinka-5|LDPC~corein                                                                                         ; combout          ;
+; |Qinka-5|CLR                                                                                              ; |Qinka-5|CLR~corein                                                                                          ; combout          ;
+; |Qinka-5|T4                                                                                               ; |Qinka-5|T4~corein                                                                                           ; combout          ;
+; |Qinka-5|LDPC~clkctrl                                                                                     ; |Qinka-5|LDPC~clkctrl                                                                                        ; outclk           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|aclr_actual~2clkctrl ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|aclr_actual~2clkctrl    ; outclk           ;
+; |Qinka-5|T4~clkctrl                                                                                       ; |Qinka-5|T4~clkctrl                                                                                          ; outclk           ;
++-----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                    ;
++-----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                 ; Output Port Name                                                                                             ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[7] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[7]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[6] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[6]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_reg_bit1a[5] ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|pre_hazard[5]           ; regout           ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita6   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita6      ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita6   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita6~COUT ; cout             ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita7   ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita7      ; combout          ;
+; |Qinka-5|74273b:inst3|13                                                                                  ; |Qinka-5|74273b:inst3|13                                                                                     ; regout           ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[6]~912                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[6]~912                               ; combout          ;
+; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[6]~913                            ; |Qinka-5|busmux:inst2|lpm_mux:$00000|mux_smc:auto_generated|result_node[6]~913                               ; combout          ;
+; |Qinka-5|Q[7]                                                                                             ; |Qinka-5|Q[7]                                                                                                ; padio            ;
+; |Qinka-5|LDAR                                                                                             ; |Qinka-5|LDAR~corein                                                                                         ; combout          ;
++-----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                   ;
++----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                             ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita5  ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|counter_comb_bita5~COUT ; cout             ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[6]~121 ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[6]~121     ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[4]~123 ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[4]~123     ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[1]~126 ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[1]~126     ; combout          ;
+; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[0]~127 ; |Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_p1j:auto_generated|latch_signal[0]~127     ; combout          ;
+; |Qinka-5|LED[7]                                                                                          ; |Qinka-5|LED[7]                                                                                              ; padio            ;
+; |Qinka-5|LED[5]                                                                                          ; |Qinka-5|LED[5]                                                                                              ; padio            ;
+; |Qinka-5|LED[0]                                                                                          ; |Qinka-5|LED[0]                                                                                              ; padio            ;
+; |Qinka-5|B[7]                                                                                            ; |Qinka-5|B[7]~corein                                                                                         ; combout          ;
+; |Qinka-5|B[5]                                                                                            ; |Qinka-5|B[5]~corein                                                                                         ; combout          ;
+; |Qinka-5|B[0]                                                                                            ; |Qinka-5|B[0]~corein                                                                                         ; combout          ;
+; |Qinka-5|LDAR                                                                                            ; |Qinka-5|LDAR~corein                                                                                         ; combout          ;
++----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Fri Nov 19 09:27:00 2010
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Qinka-5 -c Qinka-5
+Info: Using vector source file "C:/Users/Administrator/Desktop/Qinka-5/Qinka-5/Qinka-5.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      75.00 %
+Info: Number of transitions in simulation is 813
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Allocated 146 megabytes of memory during processing
+    Info: Processing ended: Fri Nov 19 09:27:00 2010
+    Info: Elapsed time: 00:00:00
+
+

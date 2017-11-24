@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Qinka-5">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Qinka-5|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Qinka-5|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_p1j.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 19 09:26:52 2010
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : Qinka-5
+Top-level Entity Name : Qinka-5
+Family : Cyclone II
+Total logic elements : 34
+    Total combinational functions : 34
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 28
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
