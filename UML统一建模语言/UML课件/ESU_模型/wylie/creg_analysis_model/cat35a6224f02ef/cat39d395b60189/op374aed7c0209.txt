@@ -1,0 +1,1 @@
+Retrieves the cost of taking the committed primary courses in the schedule.

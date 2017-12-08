@@ -1,0 +1,1 @@
+This use case allows the registrar to maintain professor information in the registration system. This includes adding, modifying, and deleting professors from the system.

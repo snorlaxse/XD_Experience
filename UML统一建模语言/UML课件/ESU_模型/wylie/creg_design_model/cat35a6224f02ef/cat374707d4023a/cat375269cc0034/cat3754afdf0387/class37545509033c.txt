@@ -1,0 +1,1 @@
+Responsible for all communication with the external Billing System.

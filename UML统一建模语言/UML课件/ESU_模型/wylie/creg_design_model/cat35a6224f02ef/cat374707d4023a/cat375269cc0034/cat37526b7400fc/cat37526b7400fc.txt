@@ -1,0 +1,1 @@
+The CourseCatalogSystem subsystem encapsulates all the work that goes on in communicating to the legacy Course Catalog System.  The system provides access to the unabridged catalog of all courses and course offerings offered by the university including those from previous semesters.

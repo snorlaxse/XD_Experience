@@ -1,0 +1,7 @@
+
+     * Returns this thread's name.
+     *
+     * @return  this thread's name.
+     * @see     java.lang.Thread#setName(java.lang.String)
+     * @since   JDK1.0
+     

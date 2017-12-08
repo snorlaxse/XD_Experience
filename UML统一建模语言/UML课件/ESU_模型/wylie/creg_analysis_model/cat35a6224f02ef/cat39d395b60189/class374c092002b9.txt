@@ -1,0 +1,1 @@
+Contains information about a Course Offering that is schedule-specific (i.e., information about a particular Course Offering as it appears on a particular Schedule).  For example, the status of the Course Offering on the Schedule (e.g., has the Course Offering been selected on the Schedule, cancelled, etc.).

@@ -1,0 +1,1 @@
+Contains the interfaces that support access to external systems.  This is so that the external system interface classes can be version controlled independently from the subsystems that realize them.

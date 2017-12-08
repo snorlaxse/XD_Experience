@@ -1,0 +1,1 @@
+Defines system-level operations that are not specific to any database.

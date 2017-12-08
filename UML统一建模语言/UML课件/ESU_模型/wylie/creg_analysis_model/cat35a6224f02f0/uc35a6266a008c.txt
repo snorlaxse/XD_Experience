@@ -1,0 +1,1 @@
+This use case allows a professor to select the course offerings (date- and time- specific courses will be given) from the course catalog for the courses that he/she is eligible for and wishes to teach in the upcoming semester

@@ -1,0 +1,1 @@
+A connection (session) with a specific database. Within the context of a Connection, SQL statements are executed and results are returned.

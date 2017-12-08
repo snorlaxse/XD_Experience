@@ -1,0 +1,1 @@
+Make sure that the maximum number of course offerings have been selected (if the max number of primary courses is not committed, select alternates).

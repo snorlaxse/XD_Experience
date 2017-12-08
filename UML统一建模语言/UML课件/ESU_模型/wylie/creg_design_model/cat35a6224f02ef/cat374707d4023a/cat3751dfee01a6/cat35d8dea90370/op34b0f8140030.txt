@@ -1,0 +1,7 @@
+
+     * Returns this thread's priority.
+     *
+     * @return  this thread's name.
+     * @see     java.lang.Thread#setPriority(int)
+     * @since   JDK1.0
+     

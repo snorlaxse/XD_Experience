@@ -1,0 +1,7 @@
+
+     * Waits for this thread to die. 
+     *
+     * @exception  InterruptedException  if another thread has interrupted the
+     *               current thread.
+     * @since      JDK1.0
+     

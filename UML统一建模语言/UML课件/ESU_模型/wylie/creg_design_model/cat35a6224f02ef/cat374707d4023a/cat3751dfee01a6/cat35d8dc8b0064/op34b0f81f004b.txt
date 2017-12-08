@@ -1,0 +1,4 @@
+
+     * Function to cleanup and create the URL.
+     * It checks for and removes the protocol
+     

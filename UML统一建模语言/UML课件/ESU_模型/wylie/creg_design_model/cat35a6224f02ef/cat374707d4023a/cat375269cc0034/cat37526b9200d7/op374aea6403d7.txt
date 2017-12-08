@@ -1,0 +1,2 @@
+Finally commits or cancels the course offering.
+Should be called once all leveling has occurred.

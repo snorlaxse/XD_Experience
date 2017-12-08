@@ -1,0 +1,11 @@
+
+     * Tests if the current thread has been interrupted.
+     * Note that <code>interrupted</code> is a static method, while 
+     * <code>isInterrupted</code> is called on the current 
+     * <code>Thread</code> instance. 
+     *
+     * @return  <code>true</code> if the current thread has been interrupted;
+     *          <code>false</code> otherwise.
+     * @see     java.lang.Thread#isInterrupted()
+     * @since   JDK1.0
+     

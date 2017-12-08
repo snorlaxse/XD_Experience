@@ -1,0 +1,12 @@
+
+     * Waits at most <code>millis</code> milliseconds plus 
+     * <code>nanos</code> nanoseconds for this thread to die. 
+     *
+     * @param      millis   the time to wait in milliseconds.
+     * @param      nanos    0-999999 additional nanoseconds to wait.
+     * @exception  IllegalArgumentException  if the value of millis is negative
+     *               the value of nanos is not in the range 0-999999.
+     * @exception  InterruptedException  if another thread has interrupted the
+     *               current thread.
+     * @since      JDK1.0
+     

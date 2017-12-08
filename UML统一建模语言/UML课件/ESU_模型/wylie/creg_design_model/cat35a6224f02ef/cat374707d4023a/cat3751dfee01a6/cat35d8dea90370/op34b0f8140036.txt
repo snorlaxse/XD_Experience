@@ -1,0 +1,10 @@
+
+     * Copies into the specified array every active thread in this 
+     * thread group and its subgroups. This method simply calls the 
+     * <code>enumerate</code> method of this thread's thread group with 
+     * the array argument. 
+     *
+     * @return  the number of threads put into the array.
+     * @see     java.lang.ThreadGroup#enumerate(java.lang.Thread[])
+     * @since   JDK1.0
+     

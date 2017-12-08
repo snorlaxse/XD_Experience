@@ -1,0 +1,5 @@
+
+     * The default priority that is assigned to a thread. 
+     *
+     * @since   JDK1.0
+     

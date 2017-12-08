@@ -1,0 +1,2 @@
+Completely removes the instance from the database.  Syncs up the cache and the physical database.
+This forces the delete to happen right away, as opposed to being cached  (you don't want something else to link to an object that is to be deleted).

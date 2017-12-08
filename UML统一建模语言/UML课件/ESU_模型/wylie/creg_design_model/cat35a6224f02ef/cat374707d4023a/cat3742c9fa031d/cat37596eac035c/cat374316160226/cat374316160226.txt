@@ -1,0 +1,2 @@
+Provides JDBC services for RDBMS persistence.
+JDBC will work with any database that has an ODBC interface.

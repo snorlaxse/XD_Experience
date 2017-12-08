@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>示例：结束注册用例规约</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2920.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META content="rb, default" name="Microsoft Border"></HEAD>
+<BODY><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR><!--msnavigation-->
+    <TD vAlign=top><FONT face=Arial size=5><B>
+      <P align=right>课程注册系统</P>
+      <P align=right>用例规约</P>
+      <P>&nbsp;</P><I>
+      <P align=right>结束注册用例</I></B></FONT></P>
+      <P>&nbsp;</P><FONT face=Arial size=4><B>
+      <P align=right>版本 2.0</B></FONT></P>
+      <P>&nbsp;</P><FONT face=Arial size=5><B>
+      <P align=center>修订历史记录</B></FONT></P>
+      <TABLE border=1 cellPadding=7 cellSpacing=1 width=633>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width="24%"><FONT size=2><B>
+            <P align=center>日期</B></FONT></P></TD>
+          <TD vAlign=top width="12%"><FONT size=2><B>
+            <P align=center>版本</B></FONT></P></TD>
+          <TD vAlign=top width="39%"><FONT size=2><B>
+            <P align=center>说明</B></FONT></P></TD>
+          <TD vAlign=top width="24%"><FONT size=2><B>
+            <P align=center>作者</B></FONT></P></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><FONT size=2>21/Dec/98</FONT></TD>
+          <TD vAlign=top width="12%"><FONT size=2>草案</FONT></TD>
+          <TD vAlign=top width="39%"><FONT size=2>草案</FONT></TD>
+          <TD vAlign=top width="24%"><FONT size=2>S. Gamble</FONT></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><FONT size=2>13/Feb/99</FONT></TD>
+          <TD vAlign=top width="12%"><FONT size=2>版本 1.0</FONT></TD>
+          <TD vAlign=top width="39%"><FONT size=2>根据复审作了一些次要修改</FONT></TD>
+          <TD vAlign=top width="24%"><FONT size=2>S. Gamble</FONT></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><FONT size=2>15/Feb/99</FONT></TD>
+          <TD vAlign=top width="12%"><FONT size=2>版本 2.0</FONT></TD>
+          <TD vAlign=top width="39%"><FONT 
+            size=2>补充用例的修改部分。做最终整理。修改备选流。解决存在的问题。</FONT></TD>
+          <TD vAlign=top width="24%"><FONT size=2>S. Gamble</FONT></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD>
+          <TD vAlign=top width="12%"><PRE> </PRE></TD>
+          <TD vAlign=top width="39%"><PRE> </PRE></TD>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD></TR></TBODY></TABLE><FONT face=Arial size=5><B>
+      <P align=center>目录</B></FONT></P>
+      <OL>
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509123"><FONT 
+        size=2>简要说明</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509124"><FONT 
+        size=2>事件流</FONT></A> 
+        <OL>
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509125"><FONT 
+          size=2>基本流 - 成功结束注册</FONT></A> 
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509126"><FONT 
+          size=2>备选流</FONT></A> 
+          <OL>
+            <LI><A 
+            href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509127"><FONT 
+            size=2>所开课程少于三名学生</FONT></A> 
+            <LI><A 
+            href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509128"><FONT 
+            size=2>所开课程无教授任教</FONT></A> 
+            <LI><A 
+            href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509129"><FONT 
+            size=2>收费系统无法使用</FONT></A> </LI></OL></LI></OL>
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509130"><FONT 
+        size=2>特殊需求</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509131"><FONT 
+        size=2>前置条件</FONT></A> 
+        <OL>
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509132"><FONT 
+          size=2>登录</FONT></A> </LI></OL>
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509133"><FONT 
+        size=2>后置条件</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_uc_clsreg.htm#_Toc449509134"><FONT 
+        size=2>扩展点</FONT></A> </LI></OL><B><FONT face=Arial size=5>
+      <P align=center>结束注册用例<A name=_Toc423410237></A></P></FONT>
+      <OL>
+        <LI><FONT face=Arial size=2><A name=_Toc449509123>简要说明</A> 
+        </FONT></B><FONT size=2>
+        <P>注册员可以使用此用例结束注册流程。开设的课程如果没有足够学生则将被取消。每门开设课程必须至少有三名学生。每门没有被取消的课程按各个学生的情况通知收费系统，这样就可以根据该门课程对学生进行收费。</P>
+        <P>本用例主要的主角是注册员。收费系统是本用例中包含的一个主角。</P>
+        <LI><B><A name=_Toc423410239></A><A 
+        name=_Toc425054505></A></B></FONT><B><FONT face=Arial><A 
+        name=_Toc449509124>事件流</A> </FONT></B><FONT size=2>
+        <P>当注册员从主窗体中选择“结束注册”活动时，用例就此开始使用了。 
+        <OL>
+          <LI><B><A name=_Toc423410240></A><A 
+          name=_Toc425054506></A></B></FONT><B><FONT face=Arial size=2><A 
+          name=_Toc449509125>基本流</A> - 成功结束注册</FONT></B><FONT size=2> 
+          <P>系统检查注册是否正在进行。如果是，将有一个消息显示给注册员，然后用例终止。如果注册正在进行，则结束注册处理将无法执行。</P>
+          <P>对每门开设的课程，系统检查是否有三名学生注册以及是否有教授登记讲授这门课。如果满足这个条件，系统将结束课程注册，并将每位选修课程的学生的事务发送到收费系统。</P></FONT>
+          <LI><A name=_Toc449509126><FONT face=Arial size=2><B>备选流</B></FONT> 
+          <OL>
+            <LI><B><FONT face=Arial size=2><I><A 
+            name=_Toc449509127>所开课程少于三名学生</A></I></FONT></B><FONT size=2> 
+            <P>如果在基本流中，某门课程报名的学生少于三人，系统将取消该课程。“取消课程”子流程此时将被执行。</FONT></P>
+            <LI><FONT face=Arial size=2><B>取消课程</B></FONT><FONT size=2> 
+            <P>系统取消课程。对于每一个登记了取消课程的学生，系统都将修改该学生的课程安排表。被取消的课程将被第一个可选的备选课程所代替。如果没有替代课程，就不进行替换。控制返回主要流程中以便对该学期下一门课程进行处理。</P>
+            <P>一旦处理完该学期所有的课程安排，系统将通过邮件方式向所有学生通知他们课程表的变化（例如，取消或替换）。</P></FONT>
+            <LI><B><FONT face=Arial size=2><I><A 
+            name=_Toc449509128>所开课程无教授任教</A></I></FONT></B><FONT size=2> 
+            <P>如果在基本流中存在没有教授登记讲授某门课程，那么系统将取消这门课程。“取消课程”子流程此时将被执行。</P></FONT>
+            <LI><B><FONT face=Arial size=2><I><A 
+            name=_Toc449509129>收费系统无法使用</A></I></FONT></B><FONT size=2> 
+            <P>如果系统无法与收费系统通信，那么系统将尝试在经过一段指定的时间后重新发送请求。该系统不断地尝试重新发送直到收费系统变为可用为止。</P></FONT></LI></OL></LI></OL></LI></OL>
+      <BLOCKQUOTE><B><FONT size=2>
+        <P><A name=_Toc423410251></A><A name=_Toc425054510></A></FONT><FONT 
+        face=Arial>3. <A name=_Toc449509130>特殊需求</A></P></FONT></B>
+        <BLOCKQUOTE><FONT size=2>
+          <P>没有和本用例有关的特殊需求。</P></FONT></BLOCKQUOTE><FONT size=2>
+        <P><B><A name=_Toc423410253></A><A 
+        name=_Toc425054512></A></B></FONT><B><FONT face=Arial><A 
+        name=_Toc449509131>4. 前置条件</A></FONT></B> 
+        <OL>
+          <LI><B><FONT face=Arial size=2><A 
+          name=_Toc449509132>登录</A></FONT></B><FONT size=2> 
+          <P>开始使用本用例时，注册员必须登录到系统。</P></FONT></LI></OL>
+        <P><B><FONT size=3>5. <A name=_Toc423410255></A><A 
+        name=_Toc425054514></A></FONT><FONT face=Arial size=3><A 
+        name=_Toc449509133>后置条件</A></FONT></P></B>
+        <BLOCKQUOTE><FONT size=2>
+          <P>没有和本用例有关的后置条件。</P></FONT></BLOCKQUOTE>
+        <P><B><FONT face=Arial>6. <A name=_Toc449509134>扩展点</A></P></FONT></B>
+        <BLOCKQUOTE><FONT size=2>
+          <P>没有和本用例有关的扩展点。</FONT></P></BLOCKQUOTE>
+        <OL>
+          <OL>
+            <P>&nbsp;</P></OL>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P></OL>
+        <P>&nbsp;</P></BLOCKQUOTE><BR><BR>
+      <P><FONT face=Arial><A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/copyrite/copyrite.htm"><SMALL><SMALL>© 
+      1987 - 2001 Rational Software Corporation。版权所有。</SMALL></SMALL></A></FONT> 
+<!--msnavigation--></P></TD>
+    <TD vAlign=top width=24></TD>
+    <TD vAlign=top width="1%">
+      <P><A href="file:///I:/公司/Rup_zhcn/Rup_zhcn/index.htm"></A></P>
+      <SCRIPT language=JavaScript>
+
+<!--
+
+function loadTop()
+
+{
+
+  if(parent.frames.length!=0 && parent.frames[1].name=="ory_toc")
+
+  {
+
+     alert("The Rational Unified Process is already displayed using frames");
+
+  }
+
+  else
+
+  {
+
+    if(window.name=="ory_doc")
+
+    {
+
+      window.name = "xyz1234";
+
+    }
+
+    var expires = new Date();
+
+    expires.setTime (expires.getTime() + (1000 * 20));
+
+    document.cookie = "rup_ory_doc=" + escape (document.URL) +
+
+    "; expires=" + expires.toUTCString() +  "; path=/";
+
+
+
+    var new_ory_doc_loc = null;
+
+
+
+    for(i=document.links.length-1;i>=0;i--)
+
+    {
+
+       if(document.links[i].href.indexOf("index.htm")!=-1)
+
+       {
+
+         new_ory_doc_loc = document.links[i].href;
+
+         break;
+
+       }
+
+    }
+
+
+
+    if(new_ory_doc_loc!=null)
+
+    {
+
+       top.location = new_ory_doc_loc;
+
+    }
+
+   }
+
+}
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+  function getImageUrl(image)
+
+  {
+
+    var new_ory_doc_loc=null;
+
+    for(i=document.links.length-1;i>=0;i--)
+
+    {
+
+       if(document.links[i].href.indexOf("index.htm")!=-1)
+
+       {
+
+         new_ory_doc_loc = document.links[i].href.substring(0,document.links[i].href.lastIndexOf("/"));
+
+         new_ory_doc_loc = new_ory_doc_loc + "" + image;
+
+         return new_ory_doc_loc;
+
+       }
+
+    }
+
+    return null;
+
+  }
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+MSFPhover =
+
+(((navigator.appName == "Netscape") &&
+
+  (parseInt(navigator.appVersion) >= 3 )) ||
+
+  ((navigator.appName == "Microsoft Internet Explorer") &&
+
+  (parseInt(navigator.appVersion) >= 4 )));
+
+
+
+  function MSFPpreload(img)
+
+  {
+
+     var a=new Image();
+
+     a.src=img;
+
+     return a;
+
+  }
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+    if(MSFPhover)
+
+    {
+
+        RupGray=MSFPpreload(getImageUrl('/images/rup1.gif'));
+
+        RupBlue=MSFPpreload(getImageUrl('/images/rup1_a.gif'));
+
+    }
+
+// -->
+
+</SCRIPT>
+      <A href="javascript:loadTop();" 
+      onmouseout="if(MSFPhover) document['Home'].src=RupGray.src; self.status= ' ';return true" 
+      onmouseover="if(MSFPhover) document['Home'].src=RupBlue.src; self.status='Display Rational Unified Process using frames'; return true">
+      <P><IMG alt="分栏显示 Rational Unified Process" border=0 height=110 name=Home 
+      src="示例：结束注册用例规约2.files/rup1.gif" width=20></A> </P></TD></TR><!--msnavigation--></TBODY></TABLE><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <P align=right><FONT face=Arial><SMALL><SMALL>Rational Unified 
+      Process&nbsp;&nbsp; <IMG border=0 height=7 
+      src="示例：结束注册用例规约2.files/rupversion.gif" width=65></SMALL></SMALL></FONT> 
+      </P></TD></TR><!--msnavigation--></TBODY></TABLE></BODY></HTML>

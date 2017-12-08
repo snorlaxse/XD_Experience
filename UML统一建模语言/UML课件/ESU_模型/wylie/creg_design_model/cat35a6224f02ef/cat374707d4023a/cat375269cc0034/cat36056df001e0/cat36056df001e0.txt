@@ -1,0 +1,1 @@
+Contains design elements that implement the security mechanism.

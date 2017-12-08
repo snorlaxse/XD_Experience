@@ -1,0 +1,5 @@
+A specific offering for a course, including days of the week and times.
+
+Analysis Mechanisms:
+- Persistency
+- Legacy Interface
