@@ -1,1 +1,0 @@
-Actual interface to the BillingSystem.  Isolates all information specific to communicating with the BillingSystem.

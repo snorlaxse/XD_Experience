@@ -1,2 +1,0 @@
-The class used for executing a static SQL statement and obtaining the results produced by it. 
-SQL statements without parameters are normally executed using Statement objects.

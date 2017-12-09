@@ -1,1 +1,0 @@
-The Applications layer contains application-specific design elements.

@@ -1,1 +1,0 @@
-The BillingSystem subsystem provides an interface to the external billing system.  It is used to submit a bill when registration ends and students have been registered in courses.  

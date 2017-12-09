@@ -1,5 +1,0 @@
-
-     * The minimum priority that a thread can have. 
-     *
-     * @since   JDK1.0
-     

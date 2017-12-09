@@ -1,3 +1,0 @@
-The Database class represents an ObjectStore database.
-
-Before you begin creating persistent objects, you must create a database to hold the objects. In subsequent processes, you open the database to allow the process to read or modify the objects. To create a database, you call the static create() method on the Database class and specify the database name and an access mode.

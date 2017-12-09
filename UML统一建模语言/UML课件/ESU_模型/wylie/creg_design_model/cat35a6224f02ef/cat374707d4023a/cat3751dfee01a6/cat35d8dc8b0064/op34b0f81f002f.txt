@@ -1,5 +1,0 @@
-
-     * Returns the remote object for the URL.
-     * @exception RemoteException If registry could not be contacted.
-     * @exception NotBoundException If name is not currently bound.
-     

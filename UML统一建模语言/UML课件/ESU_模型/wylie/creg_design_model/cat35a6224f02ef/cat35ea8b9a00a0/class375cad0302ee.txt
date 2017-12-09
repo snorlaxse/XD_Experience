@@ -1,8 +1,0 @@
-Manages access to the legacy system.  It can be shared by multiple users registering for courses.  This allows for a cache of recently retrieved courses and offerings to improve performance. 
-The separate threads within the CourseCatalog process, CourseCache and OfferingCache are used to asynchronously retrieve items from the legacy system.  
-
-Analysis Mechanisms:
-- Legacy Interface
-
-Requirements Traceability:
-- Design Constraints: The system shall integrate with existing legacy system (course catalog database).

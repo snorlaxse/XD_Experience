@@ -1,1 +1,0 @@
-The courses a student has selected for a semester.

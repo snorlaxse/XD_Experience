@@ -1,3 +1,0 @@
-For our Course Registration System, there is one ObjectStore database,  the Course Registration Database, that contains student and schedule information for the university.
-The CourseRegDBManager class is responsible for providing access to the persistent objects in the database (e.g., Student, Schedule, etc.).  It provides a single entry point into the Course Registration Database.
-This class will be a singleton as our application only has a single ObjectStore database.

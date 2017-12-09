@@ -1,3 +1,0 @@
-Executes an SQL INSERT, UPDATE or DELETE statement. In addition, SQL statements that return nothing, such as SQL DDL statements, can be executed.
-
-Returns either the row count for INSERT, UPDATE or DELETE or 0 for SQL statements that return nothing.

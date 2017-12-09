@@ -1,1 +1,0 @@
-The basic service for managing a set of JDBC drivers. 

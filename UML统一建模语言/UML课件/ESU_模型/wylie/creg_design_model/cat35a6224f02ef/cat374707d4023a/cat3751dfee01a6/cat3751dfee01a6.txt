@@ -1,1 +1,0 @@
-Provides utilities and platform-independent services.

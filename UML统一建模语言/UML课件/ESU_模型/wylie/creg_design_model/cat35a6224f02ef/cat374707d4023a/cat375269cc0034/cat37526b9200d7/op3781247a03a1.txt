@@ -1,1 +1,0 @@
-It is assumed that the user has already verified that the course offering appears on the schedule.  

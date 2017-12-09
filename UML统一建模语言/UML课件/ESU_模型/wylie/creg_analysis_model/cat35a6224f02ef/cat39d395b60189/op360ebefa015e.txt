@@ -1,1 +1,0 @@
-Currently assuming tuition based on number of offerings taken and certain attributes of students.  If different offerings get different prices this will change slightly.

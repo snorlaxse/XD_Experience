@@ -1,1 +1,0 @@
-Provides ObjectStore services for OODBMS persistence.

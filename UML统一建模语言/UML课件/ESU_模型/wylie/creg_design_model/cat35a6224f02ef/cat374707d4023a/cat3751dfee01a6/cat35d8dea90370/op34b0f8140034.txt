@@ -1,6 +1,0 @@
-
-     * Returns this thread's thread group.
-     *
-     * @return  this thread's thread group.
-     * @since   JDK1.0
-     

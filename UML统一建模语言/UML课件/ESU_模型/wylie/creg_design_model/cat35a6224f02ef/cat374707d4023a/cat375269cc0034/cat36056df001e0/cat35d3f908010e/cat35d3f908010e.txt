@@ -1,9 +1,0 @@
-This package comprises a whole framework for user interface management.
-
-It has a ViewHandler that manages the opening and closing of windows, plus window-to-window communication so that windows do not need to depend directly upon each other.
-
-This framework is security-aware, it has a login window that will create a server-resident user context object.  The ViewHandler class manages a handle to the user context object.
-
-The ViewHandler also starts up the controller classes for each use case manager.
-
-

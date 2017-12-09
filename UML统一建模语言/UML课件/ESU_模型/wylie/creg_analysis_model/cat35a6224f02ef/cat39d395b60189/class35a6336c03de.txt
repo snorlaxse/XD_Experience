@@ -1,5 +1,0 @@
-A person enrolled in classes at the university.
-
-Analysis Mechanisms:
-- Persistency
-- Security

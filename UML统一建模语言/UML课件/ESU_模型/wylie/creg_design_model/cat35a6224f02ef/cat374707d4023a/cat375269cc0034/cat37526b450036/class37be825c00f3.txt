@@ -1,2 +1,0 @@
-A transaction for the submission of a bill to a particular Student.
-It understands the format of the transaction to be sent to the BillingSystem and has the information needed to build the billing transaction for the Student.

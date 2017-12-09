@@ -1,4 +1,0 @@
-A sample of a class that would be responsible for making another class persistent. 
-Every Class that's persistent will have a corresponding DBClass (e.g., Student with have a DBStudent).
-
-With an RDBMS, you need a mapping of objects/classes to tables and you must recreate the (association/aggregation) structures.  DBClass is a database interface class which understands the OO-to-RDBMS mapping and has the behavior to interface with the RDBMS. This database interface class is used whenever a persistent class needs to be created, accessed, or deleted.  The database interface class flattens the object and writes it to the RDBMS and reads the object data  from the RDBMS and builds the object.  

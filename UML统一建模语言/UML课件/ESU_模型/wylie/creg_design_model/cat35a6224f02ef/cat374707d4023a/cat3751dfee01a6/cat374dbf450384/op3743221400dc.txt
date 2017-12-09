@@ -1,4 +1,0 @@
-Executes a SQL statement that returns a single ResultSet.
-
-Returns a ResultSet that contains the data produced by the query; never null.
-

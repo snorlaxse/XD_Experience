@@ -1,0 +1,1 @@
+cmd_/home/grape/Desktop/1/xuehao4.ko := ld -r -m elf_i386 -T /usr/src/linux-2.6.32.60/scripts/module-common.lds --build-id -o /home/grape/Desktop/1/xuehao4.ko /home/grape/Desktop/1/xuehao4.o /home/grape/Desktop/1/xuehao4.mod.o

@@ -1,2 +1,0 @@
-Main form displays the available operations/functions that this application provides.
-This operation needs to be overridden by any client of the security mechanism.

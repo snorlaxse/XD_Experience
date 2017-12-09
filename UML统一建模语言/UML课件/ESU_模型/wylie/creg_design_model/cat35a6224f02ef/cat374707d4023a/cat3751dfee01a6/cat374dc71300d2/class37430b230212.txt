@@ -1,3 +1,0 @@
-The class that represents a database session. A session must be created in order to access the database and any persistent data.
-
-A session is the context in which PSE/PSE Pro databases are created or opened, and transactions can be executed. Only one transaction at a time can exist in a session.

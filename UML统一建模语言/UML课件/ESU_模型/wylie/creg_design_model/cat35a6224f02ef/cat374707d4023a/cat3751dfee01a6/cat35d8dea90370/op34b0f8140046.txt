@@ -1,7 +1,0 @@
-
-     * Prints a stack trace of the current thread. This method is used 
-     * only for debugging. 
-     *
-     * @see     java.lang.Throwable#printStackTrace()
-     * @since   JDK1.0
-     

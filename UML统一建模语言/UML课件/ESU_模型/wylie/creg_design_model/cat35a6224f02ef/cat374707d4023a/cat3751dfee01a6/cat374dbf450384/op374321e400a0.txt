@@ -1,1 +1,0 @@
-Creates a Statement object for sending SQL statements to the database. SQL statements without parameters are normally executed using Statement objects.  If the same SQL statement is executed many times, it is more efficient to use a PreparedStatement

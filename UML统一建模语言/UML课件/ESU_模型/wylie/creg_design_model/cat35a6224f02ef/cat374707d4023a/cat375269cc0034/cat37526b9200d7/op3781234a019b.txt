@@ -1,1 +1,0 @@
-Determines if the specified CourseOffering appears on the Schedule.

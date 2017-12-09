@@ -1,1 +1,0 @@
-A Student manages its own Schedules, so Field visibility is chosen from Student to Schedule and the relationship remains an aggregation.

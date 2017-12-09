@@ -1,7 +1,0 @@
-For theCourse Registration System example, there is one ObjectStore database, the Course Registration Database, that contains student and schedule information for the university. There is a CourseRegBDManager (i.e., this class is a singleton).
-
-Responsible for providing access to the persistent objects in the Course Registration Database.  It provides a single entry point into the Course Registration Database. It contains operations to access entities in the database.
-
-The CourseRegDBManager class contains most of the database-specific code, such as starting and ending transactions. There are no CourseRegDBManager objects stored in the database, which means that the CourseRegDBManager class is not required to be persistence-capable.
-
-The CourseRegDBManager class has a static members that keep track of the database that is open. It also has a number of static methods, each of which executes a transaction in the ObjectStore database.

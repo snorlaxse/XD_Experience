@@ -1,6 +1,0 @@
-
-     * Returns the current number of active threads in this thread group.
-     *
-     * @return  the current number of threads in this thread's thread group.
-     * @since   JDK1.0
-     

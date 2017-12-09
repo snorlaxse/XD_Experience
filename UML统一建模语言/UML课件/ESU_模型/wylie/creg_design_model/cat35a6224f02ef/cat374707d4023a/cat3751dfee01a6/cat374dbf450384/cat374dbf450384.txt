@@ -1,1 +1,0 @@
-The package that contains the design elements that support RDBMS persistency.

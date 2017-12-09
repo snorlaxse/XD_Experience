@@ -1,1 +1,0 @@
-This use case allows a student to register for courses in the current semester. The student can also modify or delete course selections if changes are made within the add/drop period at the beginning of the semester.  The Billing System is notified of all registration updates. The Course Catalog provides a list of all the course offerings for the current semester.

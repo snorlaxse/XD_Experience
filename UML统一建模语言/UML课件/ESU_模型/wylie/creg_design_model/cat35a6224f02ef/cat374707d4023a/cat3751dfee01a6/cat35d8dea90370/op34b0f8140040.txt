@@ -1,9 +1,0 @@
-
-     * Waits at most <code>millis</code> milliseconds for this thread to 
-     * die. A timeout of <code>0</code> means to wait forever. 
-     *
-     * @param      millis   the time to wait in milliseconds.
-     * @exception  InterruptedException  if another thread has interrupted the
-     *               current thread.
-     * @since      JDK1.0
-     

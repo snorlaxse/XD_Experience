@@ -1,5 +1,0 @@
-
-     * Interrupts this thread.
-     *
-     * @since   JDK1.0
-     

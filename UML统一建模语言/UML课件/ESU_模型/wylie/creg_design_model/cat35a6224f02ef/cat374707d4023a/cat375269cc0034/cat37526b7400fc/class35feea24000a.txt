@@ -1,9 +1,0 @@
-Interface with the legacy system that provides the unabridged catalog of all courses offered by the university.
-
-The <<subsystem proxy>> class for the CourseCatalogSystem subsystem.  It actually realizes the ICourseCatalogSystem interface, and orchestrates the processing needed to implement the subsystem responsibilities.
-
-Analysis Mechanisms:
-- Legacy Interface
-
-Requirements Traceability:
-- Design Constraints: The system shall integrate with existing legacy system (course catalog database).

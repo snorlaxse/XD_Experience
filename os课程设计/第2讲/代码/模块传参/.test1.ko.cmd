@@ -1,0 +1,1 @@
+cmd_/home/grape/Desktop/test/test1.ko := ld -r -m elf_i386 -T /usr/src/linux-2.6.32.60/scripts/module-common.lds --build-id -o /home/grape/Desktop/test/test1.ko /home/grape/Desktop/test/test1.o /home/grape/Desktop/test/test1.mod.o

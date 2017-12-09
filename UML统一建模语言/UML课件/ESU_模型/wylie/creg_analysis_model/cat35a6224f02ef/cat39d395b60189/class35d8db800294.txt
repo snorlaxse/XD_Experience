@@ -1,4 +1,0 @@
-Form which contains a Student's "schedule-in-progress".  Displays a list of Course Offerings for the current semester from which the Student may select to be added to his/her Schedule.
-
-Requirement Traceability:
-- Usability: The desktop user-interface shall be Windows 95/98 compliant.

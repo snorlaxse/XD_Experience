@@ -1,5 +1,0 @@
-
-     * Ask if some Thread has been interrupted.  The interrupted state
-     * is reset or not based on the value of ClearInterrupted that is
-     * passed.
-     

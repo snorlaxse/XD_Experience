@@ -1,3 +1,0 @@
-CourseOfferings are part of the semantics of what defines a Schedule (a Schedule is the courses a that a Student has selected for a semester).  Thus, Field visibility is chosen from Schedule to CourseOffering and the relationships remain associations.
-
-In this design, we will only Implement the Schedule-to-CourseOffering direction.  If navigation is required in the other direction (e.g., if a list of Schedules on which the CourseOffering appears is needed), it is implemented by searching all of the Schedule instances and checking the CourseOfferings that appear on them.

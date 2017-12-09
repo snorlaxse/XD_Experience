@@ -1,2 +1,0 @@
-Manages the student functionality, including user interface processing and coordination with the business processes.
-There is one instance of this process for each student that is currently registering for courses.

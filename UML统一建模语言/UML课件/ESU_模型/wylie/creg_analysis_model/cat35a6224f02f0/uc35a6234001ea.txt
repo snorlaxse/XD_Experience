@@ -1,1 +1,0 @@
-This use case allows the registrar to maintain student information in the registration system. This includes adding, modifying, and deleting students from the system.

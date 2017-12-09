@@ -1,1 +1,0 @@
-Specifies what type of student the student is (i.e., full-time, part-time, etc.)

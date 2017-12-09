@@ -1,6 +1,0 @@
-1.连接单片机后，检查USB驱动
-2.在Quartus II 7.2 (64-Bit)中，file--open--某.qpf项目文件；点programmer，Hardware--USB，start
-3.编写.c文件
-4.打开Keil uVision3，project--New--uVision Project，右键项目“Add File to Group”,选择刚写好的.c文件；点击"Options for Target"--output--"Create HEX Fi"，此时项目文件下出现.hex文件
-5.在Quartus II 7.2 (64-Bit)中，file--open--某.qpf项目文件；点programmer，Hardware--USB，start；Tools---In-System Memory Content Editor--Hardware 选择“USB”. RAm右键"Import"--选择.hex文件，RAM右键"write---"
- ~~~ OK!

@@ -1,1 +1,0 @@
-Retrieve the course offerings available for the specified semester.

@@ -1,1 +1,0 @@
-Contains business-specific elements that are used in several applications

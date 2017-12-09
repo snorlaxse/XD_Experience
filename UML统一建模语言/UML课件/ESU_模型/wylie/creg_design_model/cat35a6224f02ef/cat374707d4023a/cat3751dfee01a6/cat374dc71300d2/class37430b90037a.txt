@@ -1,1 +1,0 @@
-An ObjectStore transaction. Manages a logical unit of work.  All persistent objects must be accessed within a transaction.

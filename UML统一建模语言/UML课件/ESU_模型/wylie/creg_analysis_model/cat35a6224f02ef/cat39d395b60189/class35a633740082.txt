@@ -1,5 +1,0 @@
-A class offered by the university.
-
-Analysis Mechanisms:
-- Persistency
-- Legacy Interface

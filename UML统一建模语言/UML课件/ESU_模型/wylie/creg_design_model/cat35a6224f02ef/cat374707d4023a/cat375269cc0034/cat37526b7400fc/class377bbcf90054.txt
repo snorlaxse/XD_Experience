@@ -1,1 +1,0 @@
-The class responsible for making an instance of the CourseOffering class persistent. 

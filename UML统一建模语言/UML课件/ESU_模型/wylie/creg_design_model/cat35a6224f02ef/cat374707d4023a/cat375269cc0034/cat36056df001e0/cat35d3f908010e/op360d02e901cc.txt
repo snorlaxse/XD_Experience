@@ -1,1 +1,0 @@
-Set up the security context based on what this particular user is allowed to do.  This context will be consulted when providing options and manipulating data.

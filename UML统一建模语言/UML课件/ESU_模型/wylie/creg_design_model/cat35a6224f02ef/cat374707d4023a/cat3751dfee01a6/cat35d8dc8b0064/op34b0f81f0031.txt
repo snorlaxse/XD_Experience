@@ -1,5 +1,0 @@
-
-     * Binds the name to the specified remote object.
-     * @exception RemoteException If registry could not be contacted.
-     * @exception AlreadyBoundException If name is already bound.
-     
