@@ -1,0 +1,15 @@
+
+     * Causes this thread to begin execution; the Java Virtual Machine 
+     * calls the <code>run</code> method of this thread. 
+     * <p>
+     * The result is that two threads are running concurrently: the 
+     * current thread (which returns from the call to the 
+     * <code>start</code> method) and the other thread (which executes its 
+     * <code>run</code> method). 
+     *
+     * @exception  IllegalThreadStateException  if the thread was already
+     *               started.
+     * @see        java.lang.Thread#run()
+     * @see        java.lang.Thread#stop()
+     * @since      JDK1.0
+     

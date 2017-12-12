@@ -1,0 +1,7 @@
+This supports the use case allowing a student to register for courses in the current semester. The student can also modify or delete course selections if changes are made within the add/drop period at the beginning of the semester.
+
+Analysis Mechanisms:
+- Distribution
+
+Analysis Mechanisms:
+- Distribution

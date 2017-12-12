@@ -1,0 +1,4 @@
+Possibilities include:
+Create a Schedule
+Update a Schedule
+Delete a Schedule

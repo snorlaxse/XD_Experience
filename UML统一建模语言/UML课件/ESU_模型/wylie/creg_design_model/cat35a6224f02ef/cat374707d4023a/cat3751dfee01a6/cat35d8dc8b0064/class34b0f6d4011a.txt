@@ -1,0 +1,9 @@
+ 
+ * The Remote interface serves to identify all remote objects.
+ * Any object that is a remote object must directly or indirectly implement
+ * this interface.  Only those methods specified in a remote interface are 
+ * available remotely. <p>
+ * Implementation classes can implement any number of remote interfaces
+ * and can extend other remote implementation classes.
+ 
+For all classes that realize the Remote interface, a remote stub and a remote  skeleton is created.  These classes handle the communication that must occur to support distribution.

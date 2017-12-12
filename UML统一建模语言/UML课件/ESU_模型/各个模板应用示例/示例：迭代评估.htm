@@ -1,0 +1,377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>示例：迭代评估</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2920.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META content="rb, default" name="Microsoft Border"></HEAD>
+<BODY><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR><!--msnavigation-->
+    <TD vAlign=top><B><FONT face=Arial size=5>
+      <P align=right>课程注册系统</P>
+      <P align=right>C2 迭代评估</P></FONT>
+      <P align=right>&nbsp;</P><FONT face=Arial size=4>
+      <P align=right>版本 1.0</FONT></P><FONT face=Arial size=5>
+      <P align=center>修订历史记录</FONT></B></P>
+      <TABLE border=1 cellPadding=7 cellSpacing=1 width=633>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width="24%"><FONT size=2><B>
+            <P align=center>日期</B></FONT></P></TD>
+          <TD vAlign=top width="12%"><FONT size=2><B>
+            <P align=center>版本</B></FONT></P></TD>
+          <TD vAlign=top width="39%"><FONT size=2><B>
+            <P align=center>说明</B></FONT></P></TD>
+          <TD vAlign=top width="24%"><FONT size=2><B>
+            <P align=center>作者</B></FONT></P></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><FONT size=2>27/March/1999</FONT></TD>
+          <TD vAlign=top width="12%"><FONT size=2>1.0</FONT></TD>
+          <TD vAlign=top width="39%"><FONT size=2>初始版本 - 对第二次迭代 C2 
+          的评估。</FONT></TD>
+          <TD vAlign=top width="24%"><FONT size=2>Rick Bell</FONT></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD>
+          <TD vAlign=top width="12%"><PRE> </PRE></TD>
+          <TD vAlign=top width="39%"><PRE> </PRE></TD>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD>
+          <TD vAlign=top width="12%"><PRE> </PRE></TD>
+          <TD vAlign=top width="39%"><PRE> </PRE></TD>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD></TR>
+        <TR>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD>
+          <TD vAlign=top width="12%"><PRE> </PRE></TD>
+          <TD vAlign=top width="39%"><PRE> </PRE></TD>
+          <TD vAlign=top width="24%"><PRE> </PRE></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P><FONT face=Arial size=5><B>
+      <P align=center>&nbsp;</P>
+      <P align=center>目录</B></FONT></P>
+      <OL>
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520068"><FONT 
+        size=2>目标</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520069"><FONT 
+        size=2>范围</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520070"><FONT 
+        size=2>参考</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520071"><FONT 
+        size=2>达到迭代目标</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520072"><FONT 
+        size=2>遵守计划</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520073"><FONT 
+        size=2>实施用例和场景</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520074"><FONT 
+        size=2>对照评估标准评估结果</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520075"><FONT 
+        size=2>测试结果</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520076"><FONT 
+        size=2>外部变更发生</FONT></A> 
+        <LI><A 
+        href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_itassmnt.htm#_Toc449520077"><FONT 
+        size=2>要求返工</FONT></A> </LI></OL><B><FONT face=Arial size=5>
+      <P align=center>C2 迭代评估</P></FONT>
+      <OL>
+        <LI><FONT face=Arial><A name=_Toc449520068>目标</A> </FONT></B><FONT 
+        size=2>
+        <P>迭代评估的目标是获取迭代的结果、掌握评估标准的符合程度、吸取经验教训和准备进行变更。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520069>范围</A> </B></FONT><FONT 
+        size=2>
+        <P>本迭代评估适用于 C2 迭代。C2 迭代制定了课程注册系统 R1.0 发布版的软件基线。</P>
+        <P>C2 迭代是否成功依据在 C2 迭代计划 [7] 中所概述的评估标准来评测。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520070>参考</A></B></FONT> </LI></OL>
+      <BLOCKQUOTE><FONT size=2>
+        <P>适用的参考资料包括：</P></FONT></BLOCKQUOTE><FONT size=2>
+      <OL>
+        <OL>
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/inception/ex_vision.htm">课程注册系统前景文档</A>，WyIT387，1.0 
+          版，Wylie College IT。 
+          <LI>课程注册系统涉众请求文档，WyIT389，1.0 版，1998，Wylie College IT。 
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_glossary.htm">课程注册系统词汇表</A>，WyIT406，1.0 
+          版，1998，Wylie College IT。 
+          <LI>课程注册系统构建阶段时间表，1.0 版，1999，Wylie College IT。 
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_prjpln.htm">课程注册系统项目计划</A>，WyIT418，2.0 
+          版，1999，Wylie College IT。 
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_tstpln.htm">课程注册系统测试计划</A>，WyIT501，1.0 
+          版，1999，Wylie College IT。 
+          <LI>课程注册系统 C2 迭代计划，WyIT500，1.0 版，1999，Wylie College IT。 
+          <LI><A 
+          href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/construction/ex_bldpln.htm">C2 
+          集成构建计划</A>，WyIT502，1.0 版，1999，Wylie College IT。 
+          <LI>C2 测试评估报告，WyIT503，1.0 版，1999，Wylie College IT。</FONT> </LI></OL></OL>
+      <OL>
+        <LI><FONT face=Arial><B><A name=_Toc449520071>达到迭代目标</A> 
+        </B></FONT><FONT size=2>
+        <P>C2 迭代制定了 R1.0 的软件基线。通过多次评测表明，本次迭代成功地实现了它的目标。然而，在解决性能问题（如测试评估报告 [9] 
+        中所述）时遇到的困难导致作出决定：增加一次额外的迭代，以便重新设计和课程目录系统相连的接口。</P>
+        <P>高级管理层和 Wylie College 的代表没有批准发布 
+        R1.0，他们建议增加一次额外的迭代来重新设计和课程目录系统的接口。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520072>遵守计划</A> </B></FONT><FONT 
+        size=2>
+        <P>迭代按照完成进度的计划执行。</P>
+        <P>由于部署了额外的工作来处理性能问题，因此 C2 迭代最初的 $116,600 的预算超支了 $10,000。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520073>实施用例和场景</A> 
+        </B></FONT><FONT size=2>
+        <P>在 C2 迭代中，没有编写新的用例和场景。在 Beta 发布版中发现的缺陷已经解决。菜单和屏幕外观根据用户对 Beta 
+        发布版的反馈意见重新进行了设计。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520074>对照评估标准评估结果</A> 
+        </B></FONT><FONT size=2>
+        <P>下表列出了迭代评估标准（如 C2 迭代计划 [7] 中所述），并注明标准符合的程度。</P>
+        <P>负载测试的失败（不能满足性能需求）导致决定在 R1.0 发布之前增加一次额外的迭代。</P></FONT>
+        <TABLE border=1 cellPadding=7 cellSpacing=1 width=583>
+          <TBODY>
+          <TR>
+            <TD vAlign=top width="51%"><FONT face=Arial size=2><B>
+              <P align=center>评估标准</B></FONT></P></TD>
+            <TD vAlign=top width="49%"><FONT face=Arial size=2><B>
+              <P align=center>迭代结果</B></FONT></P></TD></TR>
+          <TR>
+            <TD vAlign=top width="51%"><FONT size=2>必须解决在（从 C1 迭代生成的） Beta 
+              发布版中发现的所有非常严重、很严重和一般严重的缺陷问题。</FONT></TD>
+            <TD vAlign=top width="49%"><FONT size=2>除与性能有关的缺陷外，在 Beta 
+              发布版中发现的所有缺陷（一般严重、很严重、非常严重）都已得到解决。</FONT></TD></TR>
+          <TR>
+            <TD vAlign=top width="51%"><FONT size=2>必须对所有用户关于 Beta 
+              发布版的反馈意见进行评估。所有确定为“重大”等级的用户反馈问题必须得到解决。 
+              <P>必须实施并测试所有针对发布版 1 的用例和需求。</FONT></P></TD>
+            <TD vAlign=top width="49%"><FONT size=2>从 Beta 
+              发布版得到的用户反馈意见进行了评估。被确定为“重大”级别的反馈意见已得到处理。 
+              <P>所有针对发布版 1 的用例和需求已得到实施。</FONT></P></TD></TR>
+          <TR>
+            <TD vAlign=top width="51%"><FONT 
+              size=2>必须满足补充规约规定的所有时机选择、性能和质量的要求。</FONT></TD>
+            <TD vAlign=top width="49%"><FONT size=2>在 R1 
+              测试中没有满足访问课程目录系统所涉及到的负载和性能的需求。</FONT></TD></TR>
+          <TR>
+            <TD vAlign=top width="51%"><FONT size=2>必须执行在测试计划 [6] 
+              中定义的测试。</FONT></TD>
+            <TD vAlign=top width="49%"><FONT size=2>在测试计划 [6] 
+              和测试模型中定义的所有测试已得到执行。依赖于负载模拟器的 10 
+          个测试用例在系统测试之后单独执行，并获得通过。</FONT></TD></TR>
+          <TR>
+            <TD vAlign=top width="51%"><FONT size=2>必须对所有的测试结果进行复审。</FONT></TD>
+            <TD vAlign=top width="49%"><FONT 
+          size=2>测试经理复审了所有的测试结果。</FONT></TD></TR>
+          <TR>
+            <TD vAlign=top width="51%"><FONT size=2>高级管理团队和 Wylie College 
+              代表必须批准发布 R1.0 软件基线。</FONT></TD>
+            <TD vAlign=top width="49%"><FONT size=2>高级管理层和 Wylie College 
+              的代表没有批准发布 R1.0 
+          软件。计划一次额外的迭代来重新设计课程目录系统的接口并解决存在的性能问题。</FONT></TD></TR></TBODY></TABLE><FONT 
+        size=2>
+        <P>&nbsp;</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520075>测试结果</A> </B></FONT><FONT 
+        size=2>
+        <P>测试结果存档在配置管理库中。要获得测试结果摘要和评估测试评测方法，请参考 C2 测试评估报告 [9]。 </P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520076>外部变更发生</A> 
+        </B></FONT><FONT size=2>
+        <P>C2 迭代响应 Beta 
+        发布版的用户反馈。由于绝大多数用户对用户界面都不满意，因此所有的菜单和屏幕外观都进行了重新设计。新设计方案已经过一组抽样用户的预览并获得了他们的认可。这种工程变更被认为“在范围内”，所以不需要变更命令。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc449520077>要求返工</A></B></FONT> 
+      </LI></OL>
+      <BLOCKQUOTE><FONT size=2>
+        <P>如第 4 
+节所述，现已在进度表中增加了一次额外的迭代。该次迭代将重新设计接口构件，并对系统在不同负载条件下的响应时间进行彻底的测试。</P>
+        <P>在以下几种情况下，对从课程目录系统检索或存储记录的响应时间进行评测：</P></FONT></BLOCKQUOTE>
+      <BLOCKQUOTE><FONT size=2>
+        <UL>
+          <LI>正常负载 
+          <LI>最大学生负载 
+          <LI>课程目录数据库处于 50% 容量 
+          <LI>课程目录数据库处于 90% 容量</FONT> </LI></UL></BLOCKQUOTE><BR><BR>
+      <P><FONT face=Arial><A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/copyrite/copyrite.htm"><SMALL><SMALL>© 
+      1987 - 2001 Rational Software 
+      Corporation。版权所有。</SMALL></SMALL></A></P></FONT><!--msnavigation--></TD>
+    <TD vAlign=top width=24></TD>
+    <TD vAlign=top width="1%">
+      <P><A href="file:///I:/公司/Rup_zhcn/Rup_zhcn/index.htm"></A></P>
+      <SCRIPT language=JavaScript>
+
+<!--
+
+function loadTop()
+
+{
+
+  if(parent.frames.length!=0 && parent.frames[1].name=="ory_toc")
+
+  {
+
+     alert("The Rational Unified Process is already displayed using frames");
+
+  }
+
+  else
+
+  {
+
+    if(window.name=="ory_doc")
+
+    {
+
+      window.name = "xyz1234";
+
+    }
+
+    var expires = new Date();
+
+    expires.setTime (expires.getTime() + (1000 * 20));
+
+    document.cookie = "rup_ory_doc=" + escape (document.URL) +
+
+    "; expires=" + expires.toUTCString() +  "; path=/";
+
+
+
+    var new_ory_doc_loc = null;
+
+
+
+    for(i=document.links.length-1;i>=0;i--)
+
+    {
+
+       if(document.links[i].href.indexOf("index.htm")!=-1)
+
+       {
+
+         new_ory_doc_loc = document.links[i].href;
+
+         break;
+
+       }
+
+    }
+
+
+
+    if(new_ory_doc_loc!=null)
+
+    {
+
+       top.location = new_ory_doc_loc;
+
+    }
+
+   }
+
+}
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+  function getImageUrl(image)
+
+  {
+
+    var new_ory_doc_loc=null;
+
+    for(i=document.links.length-1;i>=0;i--)
+
+    {
+
+       if(document.links[i].href.indexOf("index.htm")!=-1)
+
+       {
+
+         new_ory_doc_loc = document.links[i].href.substring(0,document.links[i].href.lastIndexOf("/"));
+
+         new_ory_doc_loc = new_ory_doc_loc + "" + image;
+
+         return new_ory_doc_loc;
+
+       }
+
+    }
+
+    return null;
+
+  }
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+MSFPhover =
+
+(((navigator.appName == "Netscape") &&
+
+  (parseInt(navigator.appVersion) >= 3 )) ||
+
+  ((navigator.appName == "Microsoft Internet Explorer") &&
+
+  (parseInt(navigator.appVersion) >= 4 )));
+
+
+
+  function MSFPpreload(img)
+
+  {
+
+     var a=new Image();
+
+     a.src=img;
+
+     return a;
+
+  }
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+    if(MSFPhover)
+
+    {
+
+        RupGray=MSFPpreload(getImageUrl('/images/rup1.gif'));
+
+        RupBlue=MSFPpreload(getImageUrl('/images/rup1_a.gif'));
+
+    }
+
+// -->
+
+</SCRIPT>
+      <A href="javascript:loadTop();" 
+      onmouseout="if(MSFPhover) document['Home'].src=RupGray.src; self.status= ' ';return true" 
+      onmouseover="if(MSFPhover) document['Home'].src=RupBlue.src; self.status='Display Rational Unified Process using frames'; return true">
+      <P><IMG alt="分栏显示 Rational Unified Process" border=0 height=110 name=Home 
+      src="示例：迭代评估.files/rup1.gif" width=20></A> 
+  </P></TD></TR><!--msnavigation--></TBODY></TABLE><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <P align=right><FONT face=Arial><SMALL><SMALL>Rational Unified 
+      Process&nbsp;&nbsp; <IMG border=0 height=7 
+      src="示例：迭代评估.files/rupversion.gif" width=65></SMALL></SMALL></FONT> 
+  </P></TD></TR><!--msnavigation--></TBODY></TABLE></BODY></HTML>

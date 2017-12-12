@@ -1,0 +1,7 @@
+
+     * Destroys this thread, without any cleanup. Any monitors it has 
+     * locked remain locked. (This method is not implemented in 
+     * Java&nbsp;1.0.2.)
+     *
+     * @since   JDK1.0
+     

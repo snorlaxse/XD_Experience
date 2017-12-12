@@ -1,0 +1,1 @@
+Billing information must be converted into a format understood by the external Billing System, and then submitted to the external Billing System.

@@ -1,0 +1,7 @@
+Interface with the legacy system that provides the unabridged catalog of all courses offered by the university.
+
+Analysis Mechanisms:
+- Legacy Interface
+
+Requirements Traceability:
+- Design Constraints: The system shall integrate with existing legacy system (course catalog database).

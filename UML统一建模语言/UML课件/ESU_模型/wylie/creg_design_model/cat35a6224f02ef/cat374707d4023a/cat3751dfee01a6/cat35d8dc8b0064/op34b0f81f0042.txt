@@ -1,0 +1,4 @@
+ 
+     * Rebind the name to a new object; replaces any existing binding.
+     * @exception RemoteException If registry could not be contacted.
+     

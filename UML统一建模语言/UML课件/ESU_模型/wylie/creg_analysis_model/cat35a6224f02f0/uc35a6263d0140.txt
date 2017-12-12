@@ -1,0 +1,1 @@
+This use case allows a student to view his/her report card for the previously completed semester.

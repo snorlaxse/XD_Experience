@@ -1,0 +1,9 @@
+
+     * Allocates a new <code>Thread</code> object. This constructor has 
+     * the same effect as <code>Thread(null, target, name)</code>. 
+     *
+     * @param   target   the object whose <code>run</code> method is called.
+     * @param   name     the name of the new thread.
+     * @see     java.lang.Thread#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String)
+     * @since   JDK1.0
+     

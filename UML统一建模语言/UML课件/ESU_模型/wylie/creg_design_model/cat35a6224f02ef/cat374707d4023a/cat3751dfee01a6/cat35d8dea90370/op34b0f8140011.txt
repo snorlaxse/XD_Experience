@@ -1,0 +1,11 @@
+
+     * Allocates a new <code>Thread</code> object. This constructor has 
+     * the same effect as <code>Thread(group, null, name)</code> 
+     *
+     * @param      group   the thread group.
+     * @param      name    the name of the new thread.
+     * @exception  SecurityException  if the current thread cannot create a
+     *               thread in the specified thread group.
+     * @see        java.lang.Thread#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String)
+     * @since   JDK1.0
+     

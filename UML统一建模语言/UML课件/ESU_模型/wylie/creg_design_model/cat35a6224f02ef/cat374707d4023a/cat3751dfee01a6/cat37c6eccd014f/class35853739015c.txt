@@ -1,0 +1,1 @@
+Any Java class that you want to pass as an argument to an operation on a remote interface must realize the Serializable interface.

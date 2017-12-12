@@ -1,0 +1,1 @@
+There is one instance of this process for each student that is currently registering for courses.

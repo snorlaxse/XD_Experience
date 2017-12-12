@@ -1,0 +1,41 @@
+
+     * Allocates a new <code>Thread</code> object so that it has 
+     * <code>target</code> as its run object, has the specified 
+     * <code>name</code> as its name, and belongs to the thread group 
+     * referred to by <code>group</code>.
+     * <p>
+     * If <code>group</code> is not <code>null</code>, the 
+     * <code>checkAccess</code> method of that thread group is called with 
+     * no arguments; this may result in throwing a 
+     * <code>SecurityException</code>; if <code>group</code> is 
+     * <code>null</code>, the new process belongs to the same group as 
+     * the thread that is creating the new thread. 
+     * <p>
+     * If the <code>target</code> argument is not <code>null</code>, the 
+     * <code>run</code> method of the <code>target</code> is called when 
+     * this thread is started. If the target argument is 
+     * <code>null</code>, this thread's <code>run</code> method is called 
+     * when this thread is started. 
+     * <p>
+     * The priority of the newly created thread is set equal to the 
+     * priority of the thread creating it, that is, the currently running 
+     * thread. The method <code>setPriority</code> may be used to 
+     * change the priority to a new value. 
+     * <p>
+     * The newly created thread is initially marked as being a daemon 
+     * thread if and only if the thread creating it is currently marked 
+     * as a daemon thread. The method <code>setDaemon </code> may be used 
+     * to change whether or not a thread is a daemon. 
+     *
+     * @param      group     the thread group.
+     * @param      target   the object whose <code>run</code> method is called.
+     * @param      name     the name of the new thread.
+     * @exception  SecurityException  if the current thread cannot create a
+     *               thread in the specified thread group.
+     * @see        java.lang.Runnable#run()
+     * @see        java.lang.Thread#run()
+     * @see        java.lang.Thread#setDaemon(boolean)
+     * @see        java.lang.Thread#setPriority(int)
+     * @see        java.lang.ThreadGroup#checkAccess()
+     * @since      JDK1.0
+     

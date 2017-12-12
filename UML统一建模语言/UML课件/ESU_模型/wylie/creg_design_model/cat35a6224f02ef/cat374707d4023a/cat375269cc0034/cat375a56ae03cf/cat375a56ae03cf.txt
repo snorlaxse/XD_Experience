@@ -1,0 +1,1 @@
+Contains the business-specific design elements that support the OODBMS persistency mechanism.  This includes the DBManager.  The DBManager class must contain operations for every OODBMS persistent class.

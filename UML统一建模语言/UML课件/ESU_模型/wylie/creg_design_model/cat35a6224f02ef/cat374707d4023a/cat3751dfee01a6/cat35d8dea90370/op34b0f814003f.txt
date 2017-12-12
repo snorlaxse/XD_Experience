@@ -1,0 +1,8 @@
+
+     * Counts the number of stack frames in this thread. The thread must 
+     * be suspended. 
+     *
+     * @return     the number of stack frames in this thread.
+     * @exception  IllegalThreadStateException  if this thread is not suspended.
+     * @since      JDK1.0
+     

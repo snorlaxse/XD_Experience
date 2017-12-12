@@ -1,0 +1,1 @@
+The RegistrationController is created and invoked by the RegisterForCoursesForm.  Once created, it is available to all operations of RegistrationController.  Thus Field visibility was chosen, so the relationship remains an association.

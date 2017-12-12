@@ -1,0 +1,5 @@
+A person teaching classes at the university.
+
+Analysis Mechanisms:
+- Persistency
+- Security

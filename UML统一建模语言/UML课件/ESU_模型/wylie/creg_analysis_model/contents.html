@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+	function resizeMe(e) {
+		if (navigator.appName.indexOf("Microsoft") >= 0) {
+			if(navigator.appVersion.charAt(0) == '4') {
+				var frm = window.parent.document.all
+				var hgt, wdt;
+				for (i=0; i < frm.length; i++)  { 
+					if (frm(i).name == "categories_frame") {
+						wdt = frm(i).width;
+						hgt = frm(i).height;
+					}
+				}
+				document.applets[0].resizeApplet(wdt, hgt)
+			} else {
+				alert("Unsupported browser version");
+				alert(navigator.appVersion);
+			}
+		} else if (navigator.appName.indexOf("Netscape") >= 0) {
+			if((navigator.appVersion.charAt(0) == '4' && navigator.appVersion.charAt(2) == '0' && navigator.appVersion.charAt(3) >= '6') ||
+			   (navigator.appVersion.charAt(0) == '4' && navigator.appVersion.charAt(2) >= '5') ||
+			   (navigator.appVersion.charAt(0) > '4')) {
+				var hgt, wdt;
+				hgt = e.height;
+				wdt = e.width;
+				document.applets[0].resizeApplet(wdt, hgt);
+			} else {
+				alert("Unsupported browser version");
+				alert(navigator.appVersion);
+			}
+		} else {
+				alert("Unsupported browser");
+				alert(navigator.appName);
+		}
+	}
+
+	window.onresize = resizeMe
+	window.onload = resizeMe
+
+</SCRIPT>
+
+<meta name="Microsoft Border" content="b, default">
+</HEAD>
+
+<BODY><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+
+	<APPLET CODE="IncrementalTOC.class" ARCHIVE="browser.jar" WIDTH=2048 HEIGHT=2048><param name=contents value="contents.cnt">
+	</APPLET>
+
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" width="100%" height="23">
+  <tr>
+    <td width="5%" height="19"></td>
+    <td width="61%" height="19"><font face="Arial"><a href="../../../../../../../BLOB/copyrite/copyrite.htm"><small><small>Copyright&nbsp;
+© 1987 - 2000 Rational Software Corporation&nbsp;</small></small></a></font>
+    </td>
+    <td width="34%" height="19">
+<p align="right"><font face="Arial"><small><small>Rational Unified
+Process<br>
+Course Registration Project Web</small></small></font>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</td></tr><!--msnavigation--></table></BODY>
+
+</HTML>

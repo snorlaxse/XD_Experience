@@ -1,0 +1,7 @@
+
+     * Initialize a Thread.
+     *
+     * @param g the Thread group
+     * @param target the object whose run() method gets called
+     * @param name the name of the new Thread
+     

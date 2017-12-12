@@ -1,0 +1,60 @@
+Use-Case Realizations
+../../webviewer/16.jpg
+cat35be88ff0348/cat35be88ff0348.htm
+
+cat35be88ff0348/contents.cnt
+cat35be88ff0348/
+<<layer>> Middleware
+../../webviewer/16.jpg
+cat3751dfee01a6/cat3751dfee01a6.htm
+cat3751dfee01a6/cat3751dfee01a6.txt
+cat3751dfee01a6/contents.cnt
+cat3751dfee01a6/
+Base Reuse
+../../webviewer/16.jpg
+cat375262ae0020/cat375262ae0020.htm
+cat375262ae0020/cat375262ae0020.txt
+cat375262ae0020/contents.cnt
+cat375262ae0020/
+<<layer>> Application
+../../webviewer/16.jpg
+cat37526974038a/cat37526974038a.htm
+cat37526974038a/cat37526974038a.txt
+cat37526974038a/contents.cnt
+cat37526974038a/
+<<layer>> Business Services
+../../webviewer/16.jpg
+cat375269cc0034/cat375269cc0034.htm
+cat375269cc0034/cat375269cc0034.txt
+cat375269cc0034/contents.cnt
+cat375269cc0034/
+Architectural Mechanisms
+../../webviewer/16.jpg
+cat3742c9fa031d/cat3742c9fa031d.htm
+
+cat3742c9fa031d/contents.cnt
+cat3742c9fa031d/
+Main
+../../webviewer/18.jpg
+dgm374707e602a4.htm
+dgm374707e602a4.txt
+
+
+(
+)
+Key Abstractions
+../../webviewer/18.jpg
+dgm374d85d901ca.htm
+
+
+
+(
+)
+Package Dependencies
+../../webviewer/18.jpg
+dgm375c456000b7.htm
+
+
+
+(
+)

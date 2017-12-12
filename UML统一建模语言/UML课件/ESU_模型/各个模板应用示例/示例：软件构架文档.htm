@@ -1,0 +1,745 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>示例：软件构架文档</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2920.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META content="rb, default" name="Microsoft Border"></HEAD>
+<BODY><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR><!--msnavigation-->
+    <TD vAlign=top><B><FONT face=Arial size=5>
+      <P align=right>课程注册系统</P>
+      <P align=right>软件构架文档</P></FONT>
+      <P align=right>&nbsp;</P><FONT face=Arial size=4>
+      <P align=right>版本 1.0</FONT></P><FONT face=Arial size=5>
+      <P align=center>修订历史记录</FONT></B></P>
+      <TABLE border=1 cellPadding=7 cellSpacing=1 width=680>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=136><FONT size=2><B>
+            <P align=center>日期</B></FONT></P></TD>
+          <TD vAlign=top width=59><FONT size=2><B>
+            <P align=center>版本</B></FONT></P></TD>
+          <TD vAlign=top width=231><FONT size=2><B>
+            <P align=center>说明</B></FONT></P></TD>
+          <TD vAlign=top width=182><FONT size=2><B>
+            <P align=center>作者</B></FONT></P></TD></TR>
+        <TR>
+          <TD vAlign=top width=136><FONT size=2>21/March/1999</FONT></TD>
+          <TD vAlign=top width=59><FONT size=2>1.0</FONT></TD>
+          <TD vAlign=top width=231><FONT size=2>使用 SoDA 模板和 Rose 
+            模型生成软件构架文档。</FONT></TD>
+          <TD vAlign=top width=182><FONT size=2>S. Johnson</FONT></TD></TR>
+        <TR>
+          <TD vAlign=top width=136><PRE> </PRE></TD>
+          <TD vAlign=top width=59><PRE> </PRE></TD>
+          <TD vAlign=top width=231><PRE> </PRE></TD>
+          <TD vAlign=top width=182><PRE> </PRE></TD></TR>
+        <TR>
+          <TD vAlign=top width=136><PRE> </PRE></TD>
+          <TD vAlign=top width=59><PRE> </PRE></TD>
+          <TD vAlign=top width=231><PRE> </PRE></TD>
+          <TD vAlign=top width=182><PRE> </PRE></TD></TR>
+        <TR>
+          <TD vAlign=top width=136><PRE> </PRE></TD>
+          <TD vAlign=top width=59><PRE> </PRE></TD>
+          <TD vAlign=top width=231><PRE> </PRE></TD>
+          <TD vAlign=top width=182><PRE> </PRE></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P><FONT face=Arial size=5><B>
+      <P align=center>&nbsp;</P>
+      <P align=center>目录</B></FONT></P><FONT size=2>
+      <P align=left>1. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085888">简要说明</A></FONT></P><FONT 
+      size=2>
+      <P>2. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085889">参考</A></FONT></P><FONT 
+      size=2>
+      <P>3. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085890">构架表示方式</A></FONT></P><FONT 
+      size=2>
+      <P>4. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085891">构架目标和约束</A></FONT></P><FONT 
+      size=2>
+      <P>5. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085892">用例视图</A></FONT></P><FONT 
+      size=2>
+      <P>6. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085902">逻辑视图</A></FONT></P><FONT 
+      size=2>
+      <P>7. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085911">进程视图</A></FONT></P><FONT 
+      size=2>
+      <P>8. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085962">部署视图</A></FONT></P><FONT 
+      size=2>
+      <P>9. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085968">大小和性能</A></FONT></P><FONT 
+      size=2>
+      <P>10. <A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/examples/course_reg/elaboration/ex_sadoc.htm#_Toc447085969">质量</A></FONT></P><B><FONT 
+      face=Arial size=5>
+      <P align=center>&nbsp;</P>
+      <P align=center>软件构架文档</P></FONT>
+      <OL>
+        <LI><FONT face=Arial><A name=_Toc447085888>简要说明</A> </FONT></B><FONT 
+        size=2>
+        <P>软件构架文档提供了课程注册系统构架方面的综合概述。课程注册系统是 Wylie College 为支持联机课程注册而进行开发的。</P>
+        <P>本文档从利用 Rose 实施的课程注册分析设计模型中直接生成。大部分章节都是使用 SoDA 和软件构架文档模板从 Rose 
+        模型中摘录而来。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc447085889>参考</A></B></FONT> </LI></OL>
+      <BLOCKQUOTE>
+        <BLOCKQUOTE><FONT size=2>
+          <P>适用的参考资料包括：</P></BLOCKQUOTE></BLOCKQUOTE>
+      <OL>
+        <OL>
+          <LI>课程收费接口规约，WC93332，1985，Wylie College Press。 
+          <LI>课程目录数据库规约，WC93422，1985，Wylie College Press。 
+          <LI>课程注册系统前景文档，WyIT387，1.0 版，1998，Wylie College IT。 
+          <LI>课程注册系统词汇表，WyIT406，2.0 版本，1999，Wylie College IT。 
+          <LI>用例规约 - 结束注册，WyIT403，2.0 版，1999，Wylie College IT。 
+          <LI>用例规约 - 登录，WyIT401，2.0 版，1999，Wylie College IT。 
+          <LI>用例规约 - 维护教授信息，WyIT407，2.0 版，1999，Wylie College IT。 
+          <LI>用例规约 - 课程注册，WyIT402，2.0 版，1999，Wylie College IT。 
+          <LI>用例规约 - 选择要开授的课程，WyIT405，2.0 版，1999，Wylie College IT。 
+          <LI>用例规约 - 维护学生信息，WyIT408，2.0 版，1999，Wylie College IT。 
+          <LI>用例规约 - 提交分数，WyIT409，2.0 版，1999，Wylie College IT。 
+          <LI>用例规约 - 查看报告卡，WyIT410，2.0 版，1999，Wylie College IT。 
+          <LI>课程注册系统的项目计划，WyIT418，1.0 版，1999，Wylie College IT。 
+          <LI>E1 迭代计划，WyIT420，1.0 版，1999，Wylie College IT。 
+          <LI>补充规约，WyIT400，1.0 版，1999，Wylie College，IT。 </LI></OL></OL>
+      <OL>
+        <LI><A name=archRepresentation></A></FONT><FONT face=Arial><B><A 
+        name=_Toc447085890>构架表示方式</A> </B></FONT><FONT size=2>
+        <P>本文档以一系列的视图表示构架，包括用例视图、流程视图、部署视图和实施视图。这些视图表示为 Rose Model 并使用统一建模语言 
+        (UML)。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc447085891>构架目标和约束</A></B></FONT> 
+        </LI></OL>
+      <BLOCKQUOTE>
+        <BLOCKQUOTE><FONT size=2>
+          <P>有一些重要的需求和系统约束对构架有重大的影响。它们分别是：</P></BLOCKQUOTE></BLOCKQUOTE>
+      <OL>
+        <OL>
+          <LI>必须访问 Wylie College 现有遗留的课程目录系统以检索本学期所有课程的信息。课程注册系统必须支持遗留课程目录系统 [2] 
+          采用的数据格式和 DBMS。 
+          <LI>必须与 Wylie College 现有遗留的财务系统交互以支持对学生的收费工作。该接口在课程收费接口规约 [1] 中已有定义。 
+          <LI>无论是本地校园网的 PC 还是拨号上网的远程 PC，所有的学生、教授和注册员都必须能够在这些 PC 上执行他们各自对应的功能。 
+          <LI>课程注册系统必须确保对数据进行完全保护使它们不接受未经授权的访问。所有的远程访问都必须受用户确认和密码控制的约束。 
+          <LI>课程注册系统以客户机服务器系统的形式进行实施。客户端位于 PC 上而服务器端必须在 Wylie College UNIX 
+          服务器上运行。 [3] 
+          <LI>在开发构架时，必须考虑前景文档 [3] 和补充规约 [15] 中规定的所有性能和负载需求。</FONT> </LI></OL></OL>
+      <OL>
+        <LI><FONT face=Arial><B><A name=_Toc447085892>用例视图</A> </B></FONT><FONT 
+        size=2>
+        <P>关于软件构架用例视图的说明。对于所选择的场景集和（或）作为迭代焦点的用例集，用例视图是很重要的输入。用例视图描述那些代表了某些重要的核心功能的场景集和/或用例集。它还要描述那些在构架方面的涉及范围很广（使用了许多构架元素）的场景集和/或用例集，或者那些强调或阐明了构架的某一具体的细微之处的场景集和/或用例集。</P>
+        <P>课程注册用例包括：</P>
+        <P>- 登录 (Login)</P>
+        <P>- 课程注册 (Register for Courses)</P>
+        <P>- 维护学生信息 (Maintain Student Information)</P>
+        <P>- 维护教授信息 (Maintain Professor Information)</P>
+        <P>- 选择要讲授的课程 (Select Courses to Teach)</P>
+        <P>- 提交成绩 (Submit Grades)</P>
+        <P>- 查看成绩报告单 (View Report Card)</P>
+        <P>- 结束注册 (Close Registration)</P>
+        <P>这些用例由学生、教授或者注册员主角启动执行。此外，还与外部主角交互；同时还有课程目录和收费系统。</FONT> 
+        <OL>
+          <LI><FONT face=Arial size=2><B><A 
+          name=_Toc447085893>在构架方面具有重要意义的用例</A> </B></FONT><FONT color=#ff00ff 
+          size=1>
+          <P><IMG height=776 src="示例：软件构架文档.files/ex_sadoc1.gif" 
+          width=620></FONT><FONT size=2></P>
+          <P align=center>图名：在构架方面具有重要意义的用例</P></FONT>
+          <P> 
+          <OL><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085894>结束注册</A> 
+            </FONT></I><FONT size=2>
+            <P>简要说明：本用例允许注册员结束注册流程。开设的课程如果没有足够学生则将被取消。每门开设课程必须至少有三名学生。每门没有被取消的课程按各个学生的情况通知收费系统，这样就可以根据该门课程对学生进行收费。本用例主要的主角是注册员。收费系统是本用例中包含的一个主角。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085895>登录</A> 
+            </FONT></I><FONT size=2>
+            <P>简要说明：本用例描述了用户如何登录到课程注册系统。启用此用例的主角为学生、教授和注册员。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085896>维护教授信息</A> 
+            </FONT></I><FONT size=2>
+            <P>简要说明：本用例允许注册员维护注册系统中的教授信息。其中包括添加、修改和从系统中删除教授信息。本用例的主角是注册员。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085897>选择要讲授的课程</A> 
+            </FONT></I><FONT size=2>
+            <P>简要说明：本用例允许教授从课程目录里选择他（她）在新学期适合任教而且也愿意讲授的课程（课程的时间和日期将在以后安排）。教授是开始本用例的主角。课程目录系统是用例中包含的一个主角。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085898>课程注册</A> 
+            </FONT></I><FONT size=2>
+            <P>简要说明：本用例允许学生注册本学期的课程。如果在学期开始的选/退课期间情况发生一些变化，那么学生也可以修改或删除自己所选的课程。所有的注册更新都会通知给收费系统。课程目录提供一个本学期所有课程的列表。本用例主要的主要主角是学生。课程目录系统是用例中包含的一个主角。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085899>查看成绩报告单</A> 
+            </FONT></I><FONT size=2>
+            <P>简要说明：本用例允许学生查看他（她）在上一个结束学期的成绩报告单。本用例的主角是学生。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085900>提交成绩</A> 
+            </FONT></I><FONT size=2>
+            <P>简要说明：本用例允许教授提交在上个学期结束授课的一个或多个班的学生成绩。本用例的主角是教授。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085901>维护学生信息</A> 
+          </LI></OL></LI></OL></FONT></I><FONT size=2>
+        <P>简要说明：本用例允许注册员维护注册系统中的学生信息。其中包括添加、修改和从系统中删除学生信息。本用例的主角是注册员。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc447085902>逻辑视图</A> </B></FONT><FONT 
+        size=2>
+        <P>关于构架的逻辑视图的说明。该视图说明了最为重要的类、它们在服务包和子系统中的组织以及如何将子系统组织为多个层。还说明了最重要的用例实现（例如，构架的动态方面）。类图还可以用来说明在构架方面具有主要意义的类、子系统、包和层相互之间的关系。</P>
+        <P>课程注册系统的逻辑视图由三个主要的包组成：用户界面、业务服务和业务对象。</P>
+        <P>用户接口包包含主角用来同系统通信的各种形式的类。边界类用于支持登录、维护课程表、维护教授信息、选择课程、提交成绩、维护学生信息、结束注册和查看成绩报告单。</P>
+        <P>业务服务包包含与财务系统交互、控制学生注册和管理学生评估的控制类。</P>
+        <P>业务对象包包含大学工件（例如，课程、课程表）的实体类以及同课程目录系统交互的边界类。</P></FONT>
+        <P> 
+        <OL>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085903>构架概述 — 
+          包和子系统的分层</A> </B></FONT><FONT size=2>
+          <P><IMG height=609 src="示例：软件构架文档.files/ex_sadoc2.gif" 
+          width=537></P></FONT>
+          <P> 
+          <OL><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085904>用户界面</A> 
+            </FONT></I><FONT size=2>
+            <P>层</P>
+            <P>用户界面层包含所有表示用户看到的应用程序屏幕的边界类。该层依赖于流程对象层，它跨越了客户机和中间层之间的界限。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085905>业务服务</A> 
+            </FONT></I><FONT size=2>
+            <P>层</P>
+            <P>业务服务流程层包括代表驱动应用程序行为的用例管理器的所有控制器类。该层代表从客户机到中间层的边界。业务服务层依赖于流程对象层；它跨越了客户机和中间层之间的分界。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085906>业务对象</A> 
+            </FONT></I><FONT size=2>
+            <P>层</P>
+            <P>业务对象层包括表示应用程序领域内“事物”的所有实体类。这些实体类驻留在服务器上，并利用服务类来协助完成它们的职责。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085907>系统层</A> 
+            </FONT></I><FONT size=2>
+            <P>层</P>
+            <P>系统类在面向对象的系统和由底层系统库支持的功能行为之间提供缓冲区。系统层包括所有支持安全访问课程注册系统及其数据的类。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085908>中间件</A> 
+            </FONT></I><FONT size=2>
+            <P>层</P>
+            <P>中间件层支持对关系型 DBMS 和面向对象的 DBMS 的访问。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085909>java</A> 
+            </FONT></I><FONT size=2>
+            <P>Java 包包括的类支持与远程对象交互的接口、多线程执行和可运行代码。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085910>基本复用</A> 
+          </LI></OL></LI></OL></FONT></I><FONT size=2>
+        <P>基本复用包包括支持列表功能和模式的类。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc447085911>进程视图</A> </B></FONT><FONT 
+        size=2>
+        <P>关于构架进程视图的说明。描述了系统运行时涉及到的任务（进程和线程）以及它们之间的交互和配置。还描述了各种任务的对象和类的分配。</P>
+        <P>进程模型说明了按可执行进程进行组织的课程注册类。进程用于支持学生注册、教授功能、结束注册以及对外部财务系统和课程目录系统的访问。</FONT> 
+
+        <OL>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085912>进程</A> 
+          </B></FONT><FONT size=2>
+          <P><IMG height=698 src="示例：软件构架文档.files/ex_sadoc3.gif" width=849></P>
+          <P align=center>图名称：进程</P></FONT>
+          <OL><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085913>CourseCatalogSystemAccess</A> </FONT></I><FONT 
+            size=2>
+            <P>该进程管理对遗留课程目录系统的访问。它可以为多个注册课程的用户所共享。该进程还允许将最近所检索的课程存储到高速缓冲区以提高性能。</P>
+            <P>CourseCatalog 进程内部的独立线程（即 CourseCache 和 
+            OfferingCache）用于异步检索遗留系统的项目。</P>
+            <P>分析机制：</P>
+            <P>- 遗留接口</P>
+            <P>需求的可追踪性：</P>
+            <P>- 设计约束：系统将与现有的遗留系统（课程目录数据库）集成。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085914>CourseCatalog</A> 
+            </FONT></I><FONT size=2>
+            <P>一个关于课程的完整目录，包括所有课程科目以及大学在以前各个学期所开设的课程。</P>
+            <P>该类起到适配器的作用（请参照 Gamma 模式）。它的作用就是确保能够通过子系统的 ICourseCatalogIt 接口访问 
+            CourseCatalogSystem。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085915>CourseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085916>RegistrationController</A> </FONT></I><FONT 
+            size=2>
+            <P>其支持的用例允许学生注册本学期的课程。如果在学期开始的选/退课期间情况发生一些变化，那么学生也可以修改或删除自己所选的课程。</P>
+            <P>分析机制：</P>
+            <P>- 分布</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085917>StudentApplication</A> </FONT></I><FONT size=2>
+            <P>管理学生功能，包括处理用户界面和同业务流程进行协作。</P>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085918>MainStudentForm</A> </FONT></I><FONT size=2>
+            <P>控制学生申请的界面。控制学生使用的一系列表单。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085919>FinanceSystemAccess</A> </FONT></I><FONT size=2>
+            <P>本进程同外部财务（收费）系统进行通信以启动对学生收费的任务。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085920>CloseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>结束注册进程在注册周期结束时启动。本进程与控制财务系统访问的进程进行通信。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085921>FinanceSystem</A> 
+            </FONT></I><FONT size=2>
+            <P>财务系统支持提交本学期的学生注册课程收费单。</P>
+            <P>分析机制：</P>
+            <P>- 遗留接口</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085922>CloseRegistrationController</A> 
+          </LI></OL></FONT></I><FONT size=2>
+          <P>结束注册控制器控制对财务系统的访问。</P>
+          <P>分析机制：</P>
+          <P>- 分布</P>
+          <P>&nbsp;</P></FONT>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085923>设计元素的进程</A> 
+          </B></FONT><FONT size=2>
+          <P align=center><IMG height=817 src="示例：软件构架文档.files/ex_sadoc4.gif" 
+          width=749></P>
+          <P align=center>图名称：设计元素的进程</P></FONT>
+          <OL><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085924>StudentApplication</A> </FONT></I><FONT size=2>
+            <P>管理学生功能，包括处理用户界面和同业务流程进行协作。</P>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085925>MainStudentForm</A> </FONT></I><FONT size=2>
+            <P>控制学生申请的界面。控制学生使用的一系列表单。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085926>CourseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085927>RegistrationController</A> </FONT></I><FONT 
+            size=2>
+            <P>其支持的用例允许学生注册本学期的课程。如果在学期开始的选/退课期间情况发生一些变化，那么学生也可以修改或删除自己所选的课程。</P>
+            <P>分析机制：</P>
+            <P>- 分布</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085928>CloseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>结束注册进程在注册周期结束时启动。本进程与控制财务系统访问的进程进行通信。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085929>CloseRegistrationController</A> </FONT></I><FONT 
+            size=2>
+            <P>结束注册控制器控制对财务系统的访问。</P>
+            <P>分析机制：</P>
+            <P>- 分布</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085930>FinanceSystemAccess</A> </FONT></I><FONT size=2>
+            <P>本进程同外部财务（收费）系统进行通信以启动对学生收费的任务。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085931>FinanceSystem</A> 
+            </FONT></I><FONT size=2>
+            <P>财务系统支持提交本学期的学生注册课程收费单。</P>
+            <P>分析机制：</P>
+            <P>- 遗留接口</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085932>课程</A> 
+            </FONT></I><FONT size=2>
+            <P>大学提供的某一门课。</P>
+            <P>分析机制：</P>
+            <P>- 永久性</P>
+            <P>- 遗留接口</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085933>CourseCatalog</A> 
+            </FONT></I><FONT size=2>
+            <P>一个关于课程的完整目录，包括所有课程科目以及大学在以前各个学期所开设的课程。</P>
+            <P>该类起到适配器的作用（请参照 Gamma 模式）。它的作用就是确保能够通过子系统的 ICourseCatalogIt 接口访问 
+            CourseCatalogSystem。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085934>CourseCache</A> 
+            </FONT></I><FONT size=2>
+            <P>课程高速缓冲线程用于异步检索遗留课程目录系统的项目。</FONT></P><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085935>CourseCatalogSystemAccess</A> </FONT></I><FONT 
+            size=2>
+            <P>该进程管理对遗留课程目录系统的访问。它可以为多个注册课程的用户所共享。该进程还允许将最近所检索的课程存储到高速缓冲区以提高性能。</P>
+            <P>CourseCatalog 进程内部的独立线程（即 CourseCache 和 
+            OfferingCache）用于异步检索遗留系统的项目。</P>
+            <P>分析机制：</P>
+            <P>- 遗留接口</P>
+            <P>需求的可追踪性：</P>
+            <P>- 设计约束：系统将与现有的遗留系统（课程目录数据库）集成。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085936>OfferingCache</A> 
+            </FONT></I><FONT size=2>
+            <P>OfferingCashe 线程用于异步检索遗留课程目录系统的项目。</FONT></P><FONT size=2>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085937>CourseOffering</A> 
+            </LI></OL></FONT></I><FONT size=2>
+          <P>某一课程的具体开设情况，包括一周上课的天数和时间。</P>
+          <P>分析机制：</P>
+          <P>- 永久性</P>
+          <P>- 遗留接口</P></FONT>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085938>主框架</A> 
+          </B></FONT><FONT size=2>
+          <P><IMG height=666 src="示例：软件构架文档.files/ex_sadoc5.gif" width=835></P>
+          <P align=center>图名称：主框架</P></FONT>
+          <OL><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085939>FinanceSystemAccess</A> </FONT></I><FONT size=2>
+            <P>本进程同外部财务（收费）系统进行通信以启动对学生收费的任务。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085940>CloseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>结束注册进程在注册周期结束时启动。本进程与控制财务系统访问的进程进行通信。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085941>FinanceSystem</A> 
+            </FONT></I><FONT size=2>
+            <P>财务系统支持提交本学期的学生注册课程收费单。</P>
+            <P>分析机制：</P>
+            <P>- 遗留接口</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085942>CloseRegistrationController</A> </FONT></I><FONT 
+            size=2>
+            <P>结束注册控制器控制对财务系统的访问。</P>
+            <P>分析机制：</P>
+            <P>- 分布</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085943>CourseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085944>RegistrationController</A> </FONT></I><FONT 
+            size=2>
+            <P>其支持的用例允许学生注册本学期的课程。如果在学期开始的选/退课期间情况发生一些变化，那么学生也可以修改或删除自己所选的课程。</P>
+            <P>分析机制：</P>
+            <P>- 分布</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085945>StudentApplication</A> </FONT></I><FONT size=2>
+            <P>管理学生功能，包括处理用户界面和同业务流程进行协作。</P>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085946>MainStudentForm</A> </FONT></I><FONT size=2>
+            <P>控制学生申请的界面。控制学生使用的一系列表单。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085947>CourseCatalogSystemAccess</A> </FONT></I><FONT 
+            size=2>
+            <P>该进程管理对遗留课程目录系统的访问。它可以为多个注册课程的用户所共享。该进程还允许将最近所检索的课程存储到高速缓冲区以提高性能。</P>
+            <P>CourseCatalog 进程内部的独立线程（即 CourseCache 和 
+            OfferingCache）用于异步检索遗留系统的项目。</P>
+            <P>分析机制：</P>
+            <P>- 遗留接口</P>
+            <P>需求的可追踪性：</P>
+            <P>- 设计约束：系统将与现有的遗留系统（课程目录数据库）集成。</P>
+            <P>&nbsp;</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085948>CourseCatalog</A> 
+            </LI></OL></FONT></I><FONT size=2>
+          <P>一个关于课程的完整目录，包括所有课程科目以及大学在以前各个学期所开设的课程。</P>
+          <P>该类起到适配器的作用（请参照 Gamma 模式）。它的作用就是确保能够通过子系统的 ICourseCatalogIt 接口访问 
+          CourseCatalogSystem。</P>
+          <P>&nbsp;</P></FONT>
+          <LI><FONT face=Arial size=2><B><A 
+          name=_Toc447085949>进程模型与设计模型间的依赖关系</A> </B></FONT><FONT size=2>
+          <P align=center><IMG height=552 src="示例：软件构架文档.files/ex_sadoc6.gif" 
+          width=675></P>
+          <P align=center>图：进程模型与设计模型间的依赖关系</P>
+          <P>&nbsp;</P></FONT>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085950>实施进程</A> 
+          </B></FONT><FONT size=2>
+          <P align=center><IMG height=739 src="示例：软件构架文档.files/ex_sadoc7.gif" 
+          width=827></P>
+          <P align=center>图名称：实施进程</P></FONT>
+          <OL><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085951>ProfessorApplication</A> </FONT></I><FONT size=2>
+            <P>控制教授申请的界面。控制教授使用的一系列表单。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085952>StudentApplication</A> </FONT></I><FONT size=2>
+            <P>管理学生功能，包括处理用户界面和同业务流程进行协作。</P>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085953>CourseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>对每一个当前正在注册课程的学生，都会产生该进程的一个实例。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085954>CloseRegistrationProcess</A> </FONT></I><FONT 
+            size=2>
+            <P>结束注册进程在注册周期结束时启动。本进程与控制财务系统访问的进程进行通信。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085955>FinanceSystemAccess</A> </FONT></I><FONT size=2>
+            <P>本进程同外部财务（收费）系统进行通信以启动对学生收费的任务。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085956>Remote</A> 
+            </FONT></I><FONT size=2>
+            <P>* 
+            远程接口用来确认所有的远程对象。任何作为远程对象的对象都必须直接或者间接地实施该接口。只有在远程接口中指定的方法才能远程使用。</P>
+            <P>* 实施类可以实施任何数目的远程接口，还可以扩展其它远程实施类。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085957>Runnable</A> 
+            </FONT></I><FONT size=2>
+            <P>* 如果一个类的实例确定由某个线程来执行，那么应该由该类来实现 <EM>Runnable</EM> 接口。该类必须定义一个称为 
+            <EM>run</EM> 的不调用任何参数的方法。</P>
+            <P>* 该接口设计用于为在那些在活动状态时执行代码的对象提供一个公用的协议。例如，<EM>Runnable</EM> 由类 
+            <EM>Thread</EM> 实现。</P>
+            <P>* 活动状态只不过表示一个线程已经开始，但还没有被停止。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085958>OfferingCache</A> 
+            </FONT></I><FONT size=2>
+            <P>OfferingCashe 线程用于异步检索遗留课程目录系统的项目。</FONT></P><I>
+            <LI><FONT face=Arial size=2><A 
+            name=_Toc447085959>CourseCatalogSystemAccess</A> </FONT></I><FONT 
+            size=2>
+            <P>该进程管理对遗留课程目录系统的访问。它可以为多个注册课程的用户所共享。该进程还允许将最近所检索的课程存储到高速缓冲区以提高性能。</P>
+            <P>CourseCatalog 进程内部的独立线程（即 CourseCache 和 
+            OfferingCache）用于异步检索遗留系统的项目。</P>
+            <P>分析机制：</P>
+            <P>- 遗留接口</P>
+            <P>需求的可追踪性：</P>
+            <P>- 设计约束：系统将与现有的遗留系统（课程目录数据库）集成。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085960>Thread</A> 
+            </FONT></I><FONT size=2>
+            <P>* <I>thread</I> 是在程序中的执行线程。Java 虚拟机允许一个应用程序同时运行多个线程。</P>
+            <P>* 
+            每一线程都有其相应的优先级。较高优先级的线程要先于较低优先级的线程被执行。每一个线程可以被标记为一个守护进程，但也可以不这样做。如果在某个线程中运行的代码创建了一个新的线程对象，则将新线程的优先级最初需要设置为与它的父线程的优先级相同，而且当且仅当父线程是守护进程时它才也是一个守护进程。</P></FONT><I>
+            <LI><FONT face=Arial size=2><A name=_Toc447085961>CourseCache</A> 
+            </LI></OL></LI></OL></FONT></I>
+        <BLOCKQUOTE>
+          <BLOCKQUOTE><FONT size=2>
+            <P>课程高速缓冲线程用于异步检索遗留课程目录系统的项目。</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+        <LI><FONT face=Arial><B><A name=_Toc447085962>部署视图</A> </B></FONT><FONT 
+        size=2>
+        <P>构架部署视图的有关说明。描述了最常用平台配置的不同物理节点。还描述了如何将任务（从流程视图）分配到物理节点。</P>
+        <P>该部分按照物理网络配置进行组织；在利用部署图说明每个这样的配置后，接着映射每个处理器的进程。</P>
+        <P align=center><IMG height=436 src="示例：软件构架文档.files/ex_sadoc8.gif" 
+        width=506></P>
+        <P align=center>图名称：部署视图</P></FONT>
+        <OL>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085963>外部台式 PC</A> 
+          </B></FONT><FONT size=2>
+          <P>学生利用连接到大学服务器的外部台式 PC 通过 internet 拨号上网进行课程注册。</P></FONT>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085964>台式 PC</A> 
+          </B></FONT><FONT size=2>
+          <P>学生利用通过 LAN 直接连接到大学服务器的本地台式 PC 进行课程注册。教授也利用这些本地 PC 
+          来选择课程和提交学生成绩。注册员则利用这些本地 PC 来维护学生和教授信息。</P></FONT>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085965>注册服务器</A> 
+          </B></FONT><FONT size=2>
+          <P>注册服务器是大学校园的 UNIX 主服务器。所有的教师和学生都可以通过校园 LAN 来访问该服务器。</P></FONT>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085966>课程目录</A> 
+          </B></FONT><FONT size=2>
+          <P>课程目录系统是一个包含有完整课程目录的遗留系统。通过大学服务器和 LAN 即可对它进行访问。</P></FONT>
+          <LI><FONT face=Arial size=2><B><A name=_Toc447085967>收费系统</A> 
+        </LI></OL></B></FONT><FONT size=2>
+        <P>收费系统（也称为财务系统）是一个遗留系统，它生成每个学期的学生收费单。</P></FONT>
+        <LI><FONT face=Arial><B><A name=_Toc447085968>大小和性能</A></B></FONT> 
+      </LI></OL>
+      <BLOCKQUOTE>
+        <BLOCKQUOTE><FONT size=2>
+          <P>所选的软件构架支持关键性的关于大小确定和时机选择的需求，这一点在补充规约 [15] 
+      中已有规定。</P></BLOCKQUOTE></BLOCKQUOTE>
+      <OL>
+        <OL>
+          <LI>在任意既定时刻，系统最多可支持 2000 名用户同时使用中央数据库，并在任意时刻最多可支持 500 名用户同时使用本地服务器。 
+          <LI>系统将能在十秒钟内提供对遗留课程目录数据库的访问。 
+          <LI>系统必须能够在 2 分钟内完成所有事务的 80%。 
+          <LI>客户机程序运行要求的磁盘空间不到 20 MB，并且内存为 32 MB。 </LI></OL></OL>
+      <BLOCKQUOTE>
+        <BLOCKQUOTE>
+          <P>所选的构架通过客户机服务器构架的实施来支持关于大小确定和时机选择的需求，客户机部分在本地校园 PC 或远程拨号 PC 
+          上实现。构件设计用于确保 PC 客户机部分需要最少的磁盘空间和内存。</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+      <OL>
+        <LI><FONT face=Arial><B><A name=_Toc447085969>质量</A></B></FONT> </LI></OL>
+      <BLOCKQUOTE>
+        <BLOCKQUOTE><FONT size=2>
+          <P>软件构架支持质量需求，这一点在补充规约 [15] 中已有规定。</P></BLOCKQUOTE></BLOCKQUOTE>
+      <OL>
+        <OL>
+          <LI>桌面用户界面应与 Windows 95/98 兼容。 
+          <LI>课程注册系统用户界面的设计应当着眼于易于使用，使具有一定计算机知识的用户群体不需要经过更多的培训就能够使用系统。 
+          <LI>课程注册系统的每项特性都应具有内置的用户联机帮助。联机帮助应包括关于系统使用的分步指导。联机帮助应包括术语和缩写词的定义。 
+          <LI>课程注册系统在每周七天，每天二十四小时内都应是可以使用的。宕机的时间应少于 4%。 
+          <LI>平均故障间隔时间应超过三百小时。 
+          <LI>课程注册系统的 PC 客户机程序部分的升级可以通过 Internet 从 UNIX 
+          服务器上下载。此功能可以让学生很容易地对系统进行升级。</FONT> </LI></OL></OL><BR><BR>
+      <P><FONT face=Arial><A 
+      href="file:///I:/公司/Rup_zhcn/Rup_zhcn/copyrite/copyrite.htm"><SMALL><SMALL>© 
+      1987 - 2001 Rational Software Corporation。版权所有。</SMALL></SMALL></A></FONT> 
+<!--msnavigation--></P></TD>
+    <TD vAlign=top width=24></TD>
+    <TD vAlign=top width="1%">
+      <P><A href="file:///I:/公司/Rup_zhcn/Rup_zhcn/index.htm"></A></P>
+      <SCRIPT language=JavaScript>
+
+<!--
+
+function loadTop()
+
+{
+
+  if(parent.frames.length!=0 && parent.frames[1].name=="ory_toc")
+
+  {
+
+     alert("The Rational Unified Process is already displayed using frames");
+
+  }
+
+  else
+
+  {
+
+    if(window.name=="ory_doc")
+
+    {
+
+      window.name = "xyz1234";
+
+    }
+
+    var expires = new Date();
+
+    expires.setTime (expires.getTime() + (1000 * 20));
+
+    document.cookie = "rup_ory_doc=" + escape (document.URL) +
+
+    "; expires=" + expires.toUTCString() +  "; path=/";
+
+
+
+    var new_ory_doc_loc = null;
+
+
+
+    for(i=document.links.length-1;i>=0;i--)
+
+    {
+
+       if(document.links[i].href.indexOf("index.htm")!=-1)
+
+       {
+
+         new_ory_doc_loc = document.links[i].href;
+
+         break;
+
+       }
+
+    }
+
+
+
+    if(new_ory_doc_loc!=null)
+
+    {
+
+       top.location = new_ory_doc_loc;
+
+    }
+
+   }
+
+}
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+  function getImageUrl(image)
+
+  {
+
+    var new_ory_doc_loc=null;
+
+    for(i=document.links.length-1;i>=0;i--)
+
+    {
+
+       if(document.links[i].href.indexOf("index.htm")!=-1)
+
+       {
+
+         new_ory_doc_loc = document.links[i].href.substring(0,document.links[i].href.lastIndexOf("/"));
+
+         new_ory_doc_loc = new_ory_doc_loc + "" + image;
+
+         return new_ory_doc_loc;
+
+       }
+
+    }
+
+    return null;
+
+  }
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+MSFPhover =
+
+(((navigator.appName == "Netscape") &&
+
+  (parseInt(navigator.appVersion) >= 3 )) ||
+
+  ((navigator.appName == "Microsoft Internet Explorer") &&
+
+  (parseInt(navigator.appVersion) >= 4 )));
+
+
+
+  function MSFPpreload(img)
+
+  {
+
+     var a=new Image();
+
+     a.src=img;
+
+     return a;
+
+  }
+
+// -->
+
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+
+<!--
+
+    if(MSFPhover)
+
+    {
+
+        RupGray=MSFPpreload(getImageUrl('/images/rup1.gif'));
+
+        RupBlue=MSFPpreload(getImageUrl('/images/rup1_a.gif'));
+
+    }
+
+// -->
+
+</SCRIPT>
+      <A href="javascript:loadTop();" 
+      onmouseout="if(MSFPhover) document['Home'].src=RupGray.src; self.status= ' ';return true" 
+      onmouseover="if(MSFPhover) document['Home'].src=RupBlue.src; self.status='Display Rational Unified Process using frames'; return true">
+      <P><IMG alt="分栏显示 Rational Unified Process" border=0 height=110 name=Home 
+      src="示例：软件构架文档.files/rup1.gif" width=20></A> 
+  </P></TD></TR><!--msnavigation--></TBODY></TABLE><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <P align=right><FONT face=Arial><SMALL><SMALL>Rational Unified 
+      Process&nbsp;&nbsp; <IMG border=0 height=7 
+      src="示例：软件构架文档.files/rupversion.gif" width=65></SMALL></SMALL></FONT> 
+    </P></TD></TR><!--msnavigation--></TBODY></TABLE></BODY></HTML>

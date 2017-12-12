@@ -1,0 +1,1 @@
+This use case allows a professor to submit student grades for one or more classes completed in the previous semester.

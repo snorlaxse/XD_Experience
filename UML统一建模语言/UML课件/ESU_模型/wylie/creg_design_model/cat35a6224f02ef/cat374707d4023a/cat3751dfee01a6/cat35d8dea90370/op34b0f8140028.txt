@@ -1,0 +1,16 @@
+
+     * Suspends this thread. 
+     * <p>
+     * First, the <code>checkAccess</code> method of this thread is called 
+     * with no arguments. This may result in throwing a 
+     * <code>SecurityException </code>(in the current thread). 
+     * <p>
+     * If the thread is alive, it is suspended and makes no further 
+     * progress unless and until it is resumed. 
+     *
+     * @exception  SecurityException  if the current thread cannot modify
+     *               this thread.
+     * @see        java.lang.Thread#checkAccess()
+     * @see        java.lang.Thread#isAlive()
+     * @since      JDK1.0
+     

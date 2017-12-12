@@ -1,0 +1,1 @@
+Returns the information on the course offerings for the specified semester.

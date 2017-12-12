@@ -1,0 +1,2 @@
+ Function to extract only the name from the URL.
+     

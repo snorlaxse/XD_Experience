@@ -1,0 +1,5 @@
+
+     * Returns an array of strings of the URLs in the registry.
+     * The array contains a snapshot of the names present in the registry.
+     * @exception RemoteException If registry could not be contacted.
+     
