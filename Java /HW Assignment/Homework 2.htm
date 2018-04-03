@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<HTML><HEAD><TITLE>Java Technology 2018 - Homework 2</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<LINK 
+href="hw.css" type=text/css rel=stylesheet>
+<STYLE>.user {
+	COLOR: red
+}
+</STYLE>
+
+</HEAD>
+<BODY bgColor=white leftMargin=0 topMargin=0 MARGINWIDTH="0" MARGINHEIGHT="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#aa9999 border=0>
+  <TBODY>
+    <TR> 
+      <TD class=menu bgColor=black>Java Technology Homework 2</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<DIV class=indent>
+<H2>Command Oriented Personal Information Manager and Calendar program</H2>
+<P>This assignment involves several independent projects. You need to do all
+projects!</P>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Assignment  <H2 style="TEXT-ALIGN: left">Part 1: Command Oriented Personal Information Manager</H2>
+</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<P>This assignment involves the creation of simple Personal Information 
+Management system that can deal with 4 kinds of items: todo items, notes, 
+appointments and contacts. Each of these kinds of items is described in more 
+detail below. The assignment requires that you create a class for each item 
+type, and that each class extends an abstract base class provided for you. In 
+addition to creating the four classes, you need to create a manager class that 
+supports some simple text-based commands for creating and managing items.</P>
+<P>Each of your 4 item type classes will be derived from the following abstract 
+class:</P>
+<TABLE bgColor=#ddcccc border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV 
+      style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>public abstract class PIMEntity {
+    String Priority; // every kind of item has a priority
+
+    // default constructor sets priority to "normal"
+    PIMEntity() {
+        Priority = "normal";
+    }
+
+    // priority can be established via this constructor.
+    PIMEntity(String priority) {
+        Priority =  priority;
+    }
+
+    // accessor method for getting the priority string
+    public String getPriority() {
+        return Priority;
+    }
+    // method that changes the priority string
+    public void setPriority(String p) {
+        Priority = p;
+    }
+
+    // Each PIMEntity needs to be able to set all state information
+    // (fields) from a single text string.
+    abstract public void fromString(String s);
+
+    // This is actually already defined by the super class
+    // Object, but redefined here as abstract to make sure
+    // that derived classes actually implement it
+    abstract public String toString();
+}
+</PRE></DIV></TD></TR></TBODY></TABLE><BR><BR><A name=todo>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>PIMTodo</TD></TR></TBODY></TABLE></A>
+<P>Todo items must be PIMEntites defined in a class named <CODE>PIMTodo</CODE>. 
+Each todo item must have a priority (a string), a date and a string that 
+contains the actual text of the todo item. </P><A name=note>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>PIMNote</TD></TR></TBODY></TABLE></A>
+<P>Note items must be PIMEntites defined in a class named <CODE>PIMNote</CODE>. 
+Each note item must have a priority (a string), and a string that contains the 
+actual text of the note. </P><A name=appointment>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>PIMAppointment</TD></TR></TBODY></TABLE></A>
+<P>Appointment items must be PIMEntites defined in a class named 
+<CODE>PIMAppointment</CODE>. Each appointment must have a priority (a string), a 
+date and a description (a string).</P><A name=contact>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>PIMContact</TD></TR></TBODY></TABLE></A>
+<P>Contact items must be PIMEntites defined in a class named 
+<CODE>PIMContact</CODE>. Each contact item must have a priority (a string), and 
+strings for each of the following: first name, last name, email address.</P>
+<P>There is one additional requirement on the implementation of the 4 item 
+classes listed above, the 2 classes that involve a date must share an 
+<EM>interface</EM> that you define. You must formally create this interface and 
+have both <CODE>PIMAppointment</CODE> and <CODE>PIMTodo</CODE> implement this interface.</P><A 
+name=manager>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>PIMManager</TD></TR></TBODY></TABLE></A>
+<P>You must also create a class named <CODE>PIMManager</CODE> that includes a 
+<CODE>main</CODE> and provides some way of creating and managing items (from the 
+terminal). You must support the following commands (functionality):</P>
+<UL>
+  <LI><B>List:</B> <EM>print a list of all PIM items</EM> 
+  <LI><B>Create:</B> <EM>add a new item</EM> 
+  <LI><B>Save:</B> <EM>save the entire list of items </EM> 
+  <LI><B>Load:</B> <EM>read a list of items from a file</EM> </LI></UL>
+  <P>Note:(HW2: simple version, just for printing (i.e., <b>save</b> in an array,  <b>Load</b> from the array and print out); complex version, to a file, should be finished after I/O topic, to database, can (optional) be finished after JDBC topic, to a remote server, can (optional) be after Networking topic. )
+<P>When creating a new item it is expected that the user must response to a 
+sequence of prompts to enter the appropriate information (and even to indicate 
+what kind of item is being created). Do this any way you want, just make sure 
+that your system provides enough information (instructions) so that we can use 
+your systems!</P>
+<P>There is no required format for the user interface, anything that allows 
+users to create, list, save and load is fine. Here is what it might look like 
+(user input shown in red): 
+<TABLE bgColor=#ddcccc border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV 
+      style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>java PIMManager
+
+Welcome to PIM.
+---Enter a command (suported commands are List Create Save Load Quit)---
+<SPAN class=user>List</SPAN>
+There are 0 items.
+---Enter a command (suported commands are List Create Save Load Quit)---
+<SPAN class=user>Create</SPAN>
+Enter an item type ( todo, note, contact or appointment )
+<SPAN class=user>todo</SPAN>
+Enter date for todo item: 
+<SPAN class=user>04/20/2018</SPAN>
+Enter todo text:
+<SPAN class=user>Submit java homework.</SPAN>
+Enter todo priority:
+<SPAN class=user>urgent</SPAN>
+---Enter a command (suported commands are List Create Save Load Quit)---
+<SPAN class=user>List</SPAN>
+There are 1 items.
+Item 1: TODO urgent 04/20/2018 Submit Java homework.
+---Enter a command (suported commands are List Create Save Load Quit)---
+<SPAN class=user>Save</SPAN>
+Items have been saved.
+---Enter a command (suported commands are List Create Save Load Quit)---
+<SPAN class=user>Quit</SPAN>
+</PRE></DIV></TD></TR></TBODY></TABLE><BR><BR>
+<P>Note that there is not a required Delete command. Feel free to use any data structure you want to hold a list of items, you are allowed to use a simple array with size 100 (you are not required to support lists of more than 100 items). Handling array bound exception is required. </P> 
+<P>We will talk about the various kinds of collection objects supported by 
+java.util (but you don't need to use them for this assignment).</P>
+
+<p>
+<P><B>File I/O (following I/O chapter):</B> you need to be able to save a list of items to a file (and to read from a file). You can use a simple text file and the PIMEntity methods toString() and fromString() to generate/parse strings, or you can get fancy and create Serializable objects and use Object streams.</P>
+
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Alternative PIMEntity</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<P>Reimpletement <CODE>PIMEntity</CODE> as <B><CODE>interface</CODE></B>, add change the rest of all code to use it.</P>
+
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Assignment  <H2 style="TEXT-ALIGN: left">Part 2: Class Substring</H2>
+</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+
+<P>Create a class named <CODE>Substring</CODE> that will expect the first 
+command line argument to be a string, and the second two command line arguments 
+to be integers, the first will be used as an index and the second as a length. 
+The output should be the subtring of string starting at the index and of the 
+specified length. Examples:</P>
+<TABLE bgColor=#ddcccc border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV 
+      style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>&gt; java Substring Jello 1 3
+ell
+&gt; java Substring "Hello World" 0 5
+Hello
+&gt; java Substring OneTwoThree 5 1
+o
+</PRE></DIV></TD></TR></TBODY></TABLE><BR><BR>
+<P><B>Notes:</B> As you can see from the examples, an index of 0 refers to the 
+first character in the string. To figure out how to extract a substring from a 
+String, check out the API documentation for the class <CODE>String</CODE> which 
+can be found in <CODE>java.lang</CODE></P><BR><BR>
+
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Assignment  <H2 style="TEXT-ALIGN: left">Part 3: Calendar generating program</H2>
+</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+
+<P>Write a java program named cal (the main() should be in a class named "cal") 
+that will print out to standard output the calendar for any month. Your program 
+should look at the command line arguments for a numeric month and year, and 
+print the calendar for that month in the format displayed below. If there are no 
+command line arguments, or if the command line arguments are not a valid month 
+and year, your program must print the calendar for the current month. This 
+program is a java version of the Unix "cal" command. Sample usage of your 
+program is shown below:</P>
+<TABLE bgColor=#ddcccc border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV 
+      style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>
+&gt; java cal 4 2025
+April 2025
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30
+</PRE></DIV></TD></TR></TBODY></TABLE><BR><BR>
+<P>As the above example show, the program should print out the month and year, followed by the days of the week (using the same abbreviation as shown above) and the dates in the month. Your program must produce a tabular output exactly like the above examples, the only difference should be the exact position of the dates (which depend on the specific month asked for). It is required that the columns of the calendar line up just like the above examples!</P>
+<H3 style="TEXT-ALIGN: left">Notes:</H3>
+<UL>
+  <LI>You probably want to use a java.util.Calendar object! 
+  <LI>The code may be helpful, specifically the <a href="Tomorrow.java">Tomorrow</a> 
+  and 
+	<A 
+  href="BetterTomorrow.java">
+	BetterTomorrow</A> 
+  programs. </LI></UL>
+<UL></UL><BR><BR>
+<HR>
+<BR><BR>
+
+
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>How to submit</TD></TR></TBODY></TABLE></A>
+  <P>Same as with homework HW2</P>
+<BR><BR><BR></DIV></BODY></HTML>

@@ -1,0 +1,75 @@
+BODY {
+	FONT-SIZE: 12pt; COLOR: black; FONT-FAMILY: arial,sans-serif; BACKGROUND-COLOR: white
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: purple; FONT-FAMILY: Times; TEXT-ALIGN: center
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: black; FONT-FAMILY: arial,sans-serif; TEXT-ALIGN: center
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: black; FONT-FAMILY: arial,sans-serif; TEXT-ALIGN: center
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: purple; FONT-FAMILY: arial,sans-serif; TEXT-ALIGN: center
+}
+TABLE {
+	width: 100%
+}
+DT {
+	FONT-WEIGHT: bold
+}
+PRE {
+	FONT-SIZE: 14pt; MARGIN-LEFT: 0.2in; COLOR: dark gray; MARGIN-RIGHT: 0.2in; FONT-FAMILY: Courier New,fixed
+}
+TD.code {
+	FONT-SIZE: 14pt; COLOR: blue; FONT-FAMILY: Courier New; BACKGROUND-COLOR: #eeeeee; TEXT-ALIGN: center
+}
+CODE {
+	padding: .25em .5em; FONT-SIZE: 14pt; COLOR: #bf616a; background-color: #f9f9f9; border-radius: 3px; FONT-FAMILY: Courier New; FONT-WEIGHT: bold
+}
+TD.blank {
+	FONT-SIZE: 14pt; COLOR: blue; FONT-FAMILY: Courier New; BACKGROUND-COLOR: white; TEXT-ALIGN: center
+}
+LINK {
+	TEXT-DECORATION: none
+}
+visited {
+	TEXT-DECORATION: none
+}
+active {
+	COLOR: black
+}
+A:hover {
+	COLOR: #8899AA
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: white; FONT-FAMILY: arial,sans-serif
+}
+.subtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: white; FONT-FAMILY: arial,sans-serif
+}
+.sublabel {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: black; FONT-FAMILY: arial,sans-serif; BACKGROUND-COLOR: #aa9999
+}
+.faqtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: black; FONT-FAMILY: arial,sans-serif
+}
+.subsubtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: white; FONT-FAMILY: arial,sans-serif
+}
+.menu {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: white; FONT-FAMILY: arial,sans-serif; TEXT-DECORATION: none
+}
+.l1 {
+	MARGIN-TOP: 0.1in; FONT-WEIGHT: bold; FONT-SIZE: 12pt; MARGIN-LEFT: 0.5in; FONT-FAMILY: sans-serif
+}
+.l2 {
+	MARGIN-TOP: 0.1in; FONT-WEIGHT: normal; FONT-SIZE: 12pt; MARGIN-LEFT: 0.5in; FONT-FAMILY: sans-serif
+}
+.l3 {
+	MARGIN-TOP: 0.1in; FONT-WEIGHT: normal; FONT-SIZE: 10pt; MARGIN-LEFT: 0.5in; FONT-FAMILY: sans-serif
+}
+.indent {
+	MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in
+}

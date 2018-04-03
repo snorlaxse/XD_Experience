@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<HTML><HEAD><TITLE>Java Technology 2018 - Homework 1</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<LINK 
+href="hw.css" type=text/css rel=stylesheet>
+</HEAD>
+<BODY bgColor=white leftMargin=0 topMargin=0 MARGINWIDTH="0" MARGINHEIGHT="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#aa9999 border=0>
+  <TBODY>
+    <TR> 
+      <TD class=menu bgColor=black>Java Technology Homework 1</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<DIV class=indent>
+<H2>Simple Command Line Handling Programs (Classes)</H2>
+  <H3>Electronic Submission Only!</H3><A name=assignment>
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Assignment</TD></TR></TBODY></TABLE></A>
+
+<P><B>IMPORTANT!!! :</B> Get JDK 8 installed and working first.
+You have to use the class names specfied here, you 
+can't make up your own names. Java class names are case sentitive. Note that by 
+defining the class names, we are also defining the file names you will 
+submit.</P>
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subsubtitle>Class <CODE 
+      style="FONT-SIZE: 14pt; COLOR: white">SumOfArgs</CODE></TD></TR></TBODY></TABLE></A>
+
+<P>Create a class named <CODE>SumOfArgs</CODE> that will print out the sum of 
+all integer arguments found on the command line. It should have a main() method so the class 
+can be run. Anything that is not an integer 
+should be skipped (should not contribute to the sum). It should print 
+out only the sum (nothing else!). No error messages can be printed out (no 
+matter what the command line args look like). Examples of what your class should 
+do when run:</P>
+<TABLE bgColor=#ddcccc border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV 
+      style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>&gt; java SumOfArgs 
+0
+&gt; java SumOfArgs 10 9 8
+27
+&gt; java SumOfArgs hello dave 1 2 3
+6
+&gt; java SumOfArgs Hello World
+0
+</PRE></DIV></TD></TR></TBODY></TABLE><BR>
+<p>Note: <code>Integer.parseInt(String s)</code> parses the string argument containing the int representation as a signed decimal integer. </p><BR>
+
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subsubtitle>Class <CODE 
+      style="FONT-SIZE: 14pt; COLOR: white">Book, Course, Student</CODE></TD></TR></TBODY></TABLE></A>
+<P>Create classes named <CODE>Book, Course</CODE> and <CODE>Student</CODE> to perform simple course-selecting system (CRS). <CODE>Student</CODE> has at least three overloaded constructors with different parameter list. <CODE>Student</CODE> may select one or more <CODE>Course</CODE>, and one <CODE>Course</CODE> also has some members of <CODE>Book</CODE>. 
+</P>Examples:
+<P></P>
+<TABLE bgColor=#ddcccc border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV 
+      style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid">
+      <PRE>&gt; java CRS 15131001 Java
+  15131001 select Java with books Thinking in Java, Java 8
+  
+&gt; java CRS 15131001 Java WebEngineering
+  15131001 select Java with books Thinking in Java, Java 8; and WebEngineering with Web Engineering. 
+      </PRE>
+</DIV></TD></TR></TBODY></TABLE>
+<P><B>Notes:</B> You really need to add more information inside each class to get 
+this working! <BR><A name=submit>
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>How to submit</TD></TR></TBODY></TABLE></A>
+  <P>Submission of your homework is via email, the general idea is to send an email message with your files as attachments. For HW1 you should submit your .java files (one for each class) with a report.</P>  
+  Put your src files in a folder named by you student No. 
+  <P>All projects must be submitted via email by <b>curriculum representative(课代表)</b>. The subject line of the submission message should contain your student No and a string 'HW1' indicating the HW number. 
+    The name of attachment (zip or rar file) of your message should include your <B>student#_HW1_fullname</B> (anything else you want to tell us should be included in a <b>readme.txt</b> file). Make sure your submission includes your full name, student No and Email address in every single sourse file, we can't record your grade unless we know your name or student No.</P>
+  <P><B>Don't send compiled code (class files)!</B></P>
+<P><B>Multiple Submissions: </B>You can resubmit for each 
+project, we will always grade the last submission received unless you tell us 
+otherwise.</P><BR><BR><BR></DIV></BODY></HTML>

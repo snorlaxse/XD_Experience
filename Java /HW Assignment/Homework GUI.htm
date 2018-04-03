@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<HTML><HEAD><TITLE>Java Technology 2018 - Homework PIM with GUI</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="hw.css" type=text/css rel=stylesheet>
+<STYLE>.user {
+	COLOR: red
+}
+</STYLE>
+
+<BODY bgColor=white leftMargin=0 topMargin=0 MARGINWIDTH="0" MARGINHEIGHT="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#aa9999 border=0>
+  <TBODY>
+    <TR> 
+      <TD class=menu bgColor=black>&nbsp; Java Technology - Homework 
+        GUI</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<DIV class=indent>
+
+<h2>Personal Information Manager ( with GUI )</H2>
+
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Assignment  <H2 style="TEXT-ALIGN: left">Part 1: Java GUI Calendar with PIMDateables</H2>
+</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+
+<P>This assignment involves creating a GUI Calendar that can display one month at a time. The month and year are specified on the command line or the current year and month as default.</P>
+<P>Your calendar should show all the dates in one month, and must also display any date-able PIMEntitys (Todos and Appointments) that are retrieved from a local file or PIMCollection server (database or network server, wherever the items were stored, all of them will be encouraged selected by config options). In general you need to call getItemsForDate() for each day in the month displayed, and add the item text (just the text of the todo or appointment is fine) to the cell used to display that day.</P>
+<P>You do not need to make sure that every item (Todo, Appointment) is completely visible in the calendar, it's OK if only part of the text appears on the right date. You do not have to provide any <EM>clickable</EM> items, the calendar of this HW needs only show the days of the month and the PIMDateable items.</P>
+<CENTER>
+    <img src="PIMCal.jpg" width="800" height="600"> 
+  </CENTER>
+<P>You are required to use the interface defined below (edit as you need) to access a storage :</P>
+<PRE>interface RemotePIMCollection {
+  public PIMCollection getNotes() throws CustomizedException;
+  public PIMCollection getNotes(String owner) throws CustomizedException;
+  public PIMCollection getTodos() throws CustomizedException;
+  public PIMCollection getTodos(String owner) throws CustomizedException;
+  public PIMCollection getAppointments() throws CustomizedException;
+  public PIMCollection getAppointments(String owner) throws CustomizedException;
+  public PIMCollection getContacts() throws CustomizedException;
+  public PIMCollection getContacts(String owner) throws CustomizedException;
+  public PIMCollection getItemsForDate(Date d) throws CustomizedException;
+  public PIMCollection getItemsForDate(Date d, String owner) throws CustomizedException;
+  public PIMCollection getAll() throws CustomizedException;
+  public PIMCollection getAllByOwner(String owner) throws CustomizedException;
+  public boolean add(PIMEntity) throws CustomizedException;
+}
+</PRE>
+<A name=notes>
+<p style="text-align:left; color:red">NOTE: </p>
+<LI>Generics should be used.
+<LI>CustomizedException can be an exception you use to get your Entities. For example, if you get entities from local file, you can just use IOException. 
+<LI>RemotePIMCollection is just an interface name for getting PIMCollection from a storage. It doesn't mean to use a specific technology.</p>
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>PIM classes</TD></TR></TBODY></TABLE></A>
+  <P>The PIM related class definitions provided are to be used for the GUI project (a full, GUI based Personal Information Manager). The followings should be changed to the various interfaces we have used in previous assignments:</P>
+<UL>
+  <LI>
+  <P>PIMEntity should be changed so that it includes support for an Owner (a string) and a boolean that indicates whether the item is private or public. In general the simple scheme used will be that if you know the owner name, you can access a private item (This is enforced by the methods in PIMCollection, not the individual PIMEntity derived classes). </P>
+  <LI>
+  <P>The constructors for each of the 4 types of PIMEntitys should be changed to support the owner and shared flag. </P>
+  <LI>
+  <P>The fromString methods is no longer part of the interface PIMEntity. </P>
+  <LI>
+  <P>The toString method generates a multi-line string that is suitable for  printing stuff out, but is not meant to be parsed. The general idea is that we will object serialization instead of parsing from now on... </P>
+  <LI>
+  <P>The PIMCollection class supports more methods, specifically there are methods to get public items (when no owner is specified), and to get public and private items corresponding to a specific owner. </P></LI></UL>
+
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Assignment  <H2 style="TEXT-ALIGN: left">Part 2: PIM - Personal Information Manager ( GUI )</H2>
+    </TD>
+  </TR>
+  </TBODY>
+</TABLE>
+
+<p>The GUI project is a full-blown Personal Information Manager with same general idea (todos, appointments, etc.). </p>
+
+<p>Your Personal Information Manager must support all 4 PIMEntity types, and provide (at a minimum) the following via a graphical user interface:</p>
+
+<UL>
+<li><p>A calendar that displays one month at a time, and allows users to change months (back and forward buttons are fine). All items that have dates associated with them must be displayed in the calendar. The calendar needs to meet the preview assignment's requirements and be capable of moving to another month... </p>
+
+<li><p>The user must be able to create new PIM items via a GUI. You decide what makes sense for this, there is no required specific type of GUI we have in mind.</p>
+
+<li><p>The user must be able to edit existing PIM items via a GUI. </p>
+
+<li><p>The user must be able to view all PIM items by item type, so there should be some way to view all Todo items, or Appointments, etc. There is no required format for the display of various kinds of items (do whatever looks nice to you).</p>
+
+<li><p>There must be some way for the user to save/load items, either a local file, or a shared database, or a network server shared with others. </p>
+
+<li><p>There must be a menubar that allows users to select from the supported functions (view calendar, view todos, view contacts, etc). The menubar should also include menu items for creating new PIM items ( "new TODO", "new Appointment", etc.).</p>
+
+<li><p>The user should be able to specify an account name (used as the owner for PIMEntities) once, not each time an item is created. The username can be prompted each time the program starts, it can also be saved in some kind of configuration file (or specified on the command line). The important issue is that the user is not required to specify the owner every time a new entity is created.</p>
+
+<li><p>For PIMDateable objects (PIMTodo and PIMAppointment), you don't need to worry about times, a single date (month, day and year) is all that you are required to deal with.</p>
+
+<LI><p>All source code written by you must be commented with Javadoc comments (and whatever other comments you think are appropriate). 
+</p></li>
+</UL>
+
+<TABLE cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>How to submit</TD></TR></TBODY></TABLE></A>
+  <P>Electronic Submission Only! Same as HW1 with homework-GUI.</P>
+</DIV></BODY></HTML>

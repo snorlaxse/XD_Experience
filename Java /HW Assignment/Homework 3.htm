@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<HTML><HEAD><TITLE>Java Technology 2018 - Homework 3</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<LINK 
+href="hw.css" type=text/css rel=stylesheet>
+<STYLE>.user {
+	COLOR: red
+}
+</STYLE>
+
+<BODY bgColor=white leftMargin=0 topMargin=0 MARGINWIDTH="0" MARGINHEIGHT="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#aa9999 border=0>
+  <TBODY>
+  <TR>
+      <TD class=title>Java Technology Homework 3</TD>
+      </TD></TR>
+  </TBODY></TABLE>
+<DIV class=indent>
+<H2>PIMCollection class</H2>
+  <H3>Electronic Submission Only!</H3><A 
+name=assignment>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>Assignment</TD></TR></TBODY></TABLE></A>
+<P></P>
+<H2 style="TEXT-ALIGN: left">PIMCollection class</H2>
+<P>This project involves the creation of a custom collection object that can be 
+used to manage PIMEntities (from HW2). You must create a class named 
+PIMCollection that implements the interface Collection. In addition to being a 
+Collection, your class must implement the following methods:</P>
+<DIV class=indent><A name=note>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>getNotes</TD></TR></TBODY></TABLE></A>
+<DIV 
+style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>public Collection getNotes();
+</PRE></DIV>
+<P><CODE>getNotes()</CODE> returns a Collection that holds all the PIMNote items currently in the PIMCollection. If there are no PIMNote items in the 
+PIMCollection, this method should return an empty Collection. Note that it is not specified exactly what implementation of a Collection is returned (that's up to you), just that whatever is returned implements the Collection 
+interface.</P><A name=todo>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>getTodos</TD></TR></TBODY></TABLE></A>
+<DIV 
+style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>public Collection getTodos();
+</PRE></DIV>
+<P><CODE>getNotes()</CODE> returns a Collection that holds all the PIMTodo items currently in the PIMCollection. If there are no PIMTodo items in the 
+PIMCollection, this method should return an empty Collection. Note that it is not specified exactly what implementation of a Collection is returned (that's up to you), just that whatever is returned implements the Collection 
+interface.</P><A name=appointment>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>getAppointments</TD></TR></TBODY></TABLE></A>
+<DIV 
+style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>public Collection getAppointments();
+</PRE></DIV>
+<P><CODE>getAppointments()</CODE> returns a Collection that holds all the 
+PIMAppointment items currently in the PIMCollection. If there are no 
+PIMAppointment items in the PIMCollection, this method should return an empty Collection. Note that it is not specified exactly what implementation of a Collection is returned (that's up to you), just that whatever is returned implements the Collection interface.</P><A name=contact>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>getContacts</TD></TR></TBODY></TABLE></A>
+<DIV 
+style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>public Collection getContact();
+</PRE></DIV>
+<P><CODE>getContacts()</CODE> returns a Collection that holds all the PIMContact items currently in the PIMCollection. If there are no PIMContact items in the PIMCollection, this method should return an empty Collection. Note that it is not specified exactly what implementation of a Collection is returned (that's up to you), just that whatever is returned implements the Collection interface.</P><A name=dates>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>getItemsForDate</TD></TR></TBODY></TABLE></A>
+<DIV 
+style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid"><PRE>public Collection getItemsForDate(Date d);
+</PRE></DIV>
+<P><CODE>getItemsForDate</CODE> returns a Collection that holds all the 
+PIMEntities in the PIMCollection that have a date that matches the date d. If there are no items that match the date, this method should return an empty Collection. Note that it is not specified exactly what implementation of a Collection is returned (that's up to you), just that whatever is returned implements the Collection interface.</P>
+<P>Note: It is expected that all PIMEntities in the returned collection 
+implement the interface you created during HW2. (There should only be PIMTodo and PIMAppointment items, since notes and contacts are not associated with dates).</P></DIV>
+<H3 style="TEXT-ALIGN: left">Testing PIMCollection</H3>
+<P>We will test your PIMCollection program using your other classes (everything from HW2). Although your PIMCollection class should not depend on any of your other classes (except for possibly the name of the "dateable" interface you created), we will use your classes when testing a PIMCollection, so make sure you include them in your submission. Feel free to make any changes you want to your HW2 classes for this assignment.</P>
+<P>You do not need to provide us with a main() that tests your IMCollection 
+class, but feel free to do so if you want. We can write our own main that 
+creates a PIMCollection object and puts some PIMEntities into it to test it. (Although since we don't have standard interfaces to PIMNote, PIMTodo, etc we won't be putting anythings except priorities in the PIMNotes, PIMTodos, PIMAppointments, etc).</P>
+<H3 style="TEXT-ALIGN: left">IMPORTANT NOTE</H3>
+<P>Your PIMCollection class must be a Collection! All methods defined of any Collection object must be supported. Although this sounds difficult, all you need to do is to extend an existing Collection class (like an ArrayList or 
+HashSet). Use whatever makes sense to you as your base class, but it isn't 
+necessary (or wise) to implement the entire Collection interface from scratch (just inherit it!).</P><A name=submit>
+<TABLE cellPadding=4 width="80%" border=0>
+  <TBODY>
+  <TR bgColor=#aa9999>
+    <TD class=subtitle>How to submit</TD></TR></TBODY></TABLE></A>
+  <P>Same as with homework# HW3<BR>
+    <BR><BR></P>
+</DIV></BODY></HTML>

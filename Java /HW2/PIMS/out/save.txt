@@ -1,0 +1,4 @@
+TODO normal 04/20/2018 todoText
+NOTE urgent noteText
+APPOINTMENT urgent 04/03/2018 AppointmentText
+CONTACT normal 郑 健 841145636@qq.comTODO urgent 04/20/18 Submit java homework.
